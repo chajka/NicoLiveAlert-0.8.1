@@ -107,6 +107,53 @@
 			name = MASPreferences;
 			sourceTree = "<group>";
 		};
+		C60B916C1B3AF6DE0000E035 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C60B916F1B3AF7240000E035 /* CocoaOniguruma */,
+				C60B916E1B3AF7170000E035 /* Growl */,
+				C60B916D1B3AF7000000E035 /* Sparkle */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C60B916D1B3AF7000000E035 /* Sparkle */ = {
+			isa = PBXGroup;
+			children = (
+				C60B91701B3AF7300000E035 /* 1.10 */,
+			);
+			name = Sparkle;
+			sourceTree = "<group>";
+		};
+		C60B916E1B3AF7170000E035 /* Growl */ = {
+			isa = PBXGroup;
+			children = (
+				C60B91711B3AF7370000E035 /* 2.0 */,
+			);
+			name = Growl;
+			sourceTree = "<group>";
+		};
+		C60B916F1B3AF7240000E035 /* CocoaOniguruma */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CocoaOniguruma;
+			sourceTree = "<group>";
+		};
+		C60B91701B3AF7300000E035 /* 1.10 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = 1.10;
+			sourceTree = "<group>";
+		};
+		C60B91711B3AF7370000E035 /* 2.0 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = 2.0;
+			sourceTree = "<group>";
+		};
 		C63A6E7C1B3ADF100022A385 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +180,7 @@
 				C60B91641B3AEDCC0000E035 /* Preferences */,
 				C63A6E8F1B3ADF100022A385 /* Images.xcassets */,
 				C63A6E881B3ADF100022A385 /* Supporting Files */,
+				C60B916C1B3AF6DE0000E035 /* Frameworks */,
 			);
 			path = NicoLiveAlert;
 			sourceTree = "<group>";
