@@ -14,6 +14,13 @@
 		C60B91631B3AE32E0000E035 /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = C60B91601B3AE32E0000E035 /* HTTPConnection.m */; };
 		C60B916A1B3AEDF70000E035 /* MASPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C60B91661B3AEDF70000E035 /* MASPreferencesWindowController.m */; };
 		C60B916B1B3AEDF70000E035 /* MASPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C60B91681B3AEDF70000E035 /* MASPreferencesWindow.xib */; };
+		C60B91731B3AF8C20000E035 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60B91721B3AF8C20000E035 /* Sparkle.framework */; };
+		C60B91751B3AF8CB0000E035 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60B91741B3AF8CB0000E035 /* Growl.framework */; };
+		C60B91771B3AF8D70000E035 /* CocoaOniguruma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60B91761B3AF8D70000E035 /* CocoaOniguruma.framework */; };
+		C60B917B1B3AF9C80000E035 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60B91791B3AF9BE0000E035 /* QuartzCore.framework */; };
+		C60B917C1B3AF9D10000E035 /* CocoaOniguruma.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C60B91761B3AF8D70000E035 /* CocoaOniguruma.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C60B917D1B3AF9DB0000E035 /* Growl.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C60B91741B3AF8CB0000E035 /* Growl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C60B917E1B3AF9E30000E035 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C60B91721B3AF8C20000E035 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C63A6E901B3ADF100022A385 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63A6E8F1B3ADF100022A385 /* Images.xcassets */; };
 		C63A6E9F1B3ADF100022A385 /* NicoLiveAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C63A6E9E1B3ADF100022A385 /* NicoLiveAlertTests.m */; };
 /* End PBXBuildFile section */
@@ -27,6 +34,22 @@
 			remoteInfo = NicoLiveAlert;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C60B91781B3AF9A60000E035 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				C60B917C1B3AF9D10000E035 /* CocoaOniguruma.framework in Copy Frameworks */,
+				C60B917D1B3AF9DB0000E035 /* Growl.framework in Copy Frameworks */,
+				C60B917E1B3AF9E30000E035 /* Sparkle.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C60B91541B3AE1B90000E035 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Localizable/en.lproj/NicoLiveAlert.xib; sourceTree = "<group>"; };
@@ -42,6 +65,10 @@
 		C60B91671B3AEDF70000E035 /* MASPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASPreferencesWindowController.h; path = Preference/MASPreferences/MASPreferencesWindowController.h; sourceTree = "<group>"; };
 		C60B91681B3AEDF70000E035 /* MASPreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MASPreferencesWindow.xib; path = Preference/MASPreferences/MASPreferencesWindow.xib; sourceTree = "<group>"; };
 		C60B91691B3AEDF70000E035 /* MASPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASPreferencesViewController.h; path = Preference/MASPreferences/MASPreferencesViewController.h; sourceTree = "<group>"; };
+		C60B91721B3AF8C20000E035 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = External/Sparkle/1.10/Sparkle.framework; sourceTree = SOURCE_ROOT; };
+		C60B91741B3AF8CB0000E035 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = External/Growl/Framework/Growl.framework; sourceTree = SOURCE_ROOT; };
+		C60B91761B3AF8D70000E035 /* CocoaOniguruma.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaOniguruma.framework; path = External/CocoaOniguruma/CocoaOniguruma.framework; sourceTree = SOURCE_ROOT; };
+		C60B91791B3AF9BE0000E035 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C63A6E851B3ADF100022A385 /* NicoLiveAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NicoLiveAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63A6E8F1B3ADF100022A385 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C63A6E981B3ADF100022A385 /* NicoLiveAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NicoLiveAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +81,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C60B917B1B3AF9C80000E035 /* QuartzCore.framework in Frameworks */,
+				C60B91771B3AF8D70000E035 /* CocoaOniguruma.framework in Frameworks */,
+				C60B91751B3AF8CB0000E035 /* Growl.framework in Frameworks */,
+				C60B91731B3AF8C20000E035 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +138,57 @@
 			name = MASPreferences;
 			sourceTree = "<group>";
 		};
+		C60B916C1B3AF6DE0000E035 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C60B91791B3AF9BE0000E035 /* QuartzCore.framework */,
+				C60B916F1B3AF7240000E035 /* CocoaOniguruma */,
+				C60B916E1B3AF7170000E035 /* Growl */,
+				C60B916D1B3AF7000000E035 /* Sparkle */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C60B916D1B3AF7000000E035 /* Sparkle */ = {
+			isa = PBXGroup;
+			children = (
+				C60B91701B3AF7300000E035 /* 1.10 */,
+			);
+			name = Sparkle;
+			sourceTree = "<group>";
+		};
+		C60B916E1B3AF7170000E035 /* Growl */ = {
+			isa = PBXGroup;
+			children = (
+				C60B91711B3AF7370000E035 /* 2.0 */,
+			);
+			name = Growl;
+			sourceTree = "<group>";
+		};
+		C60B916F1B3AF7240000E035 /* CocoaOniguruma */ = {
+			isa = PBXGroup;
+			children = (
+				C60B91761B3AF8D70000E035 /* CocoaOniguruma.framework */,
+			);
+			name = CocoaOniguruma;
+			sourceTree = "<group>";
+		};
+		C60B91701B3AF7300000E035 /* 1.10 */ = {
+			isa = PBXGroup;
+			children = (
+				C60B91721B3AF8C20000E035 /* Sparkle.framework */,
+			);
+			name = 1.10;
+			sourceTree = "<group>";
+		};
+		C60B91711B3AF7370000E035 /* 2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				C60B91741B3AF8CB0000E035 /* Growl.framework */,
+			);
+			name = 2.0;
+			sourceTree = "<group>";
+		};
 		C63A6E7C1B3ADF100022A385 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +215,7 @@
 				C60B91641B3AEDCC0000E035 /* Preferences */,
 				C63A6E8F1B3ADF100022A385 /* Images.xcassets */,
 				C63A6E881B3ADF100022A385 /* Supporting Files */,
+				C60B916C1B3AF6DE0000E035 /* Frameworks */,
 			);
 			path = NicoLiveAlert;
 			sourceTree = "<group>";
@@ -173,6 +256,7 @@
 				C63A6E811B3ADF100022A385 /* Sources */,
 				C63A6E821B3ADF100022A385 /* Frameworks */,
 				C63A6E831B3ADF100022A385 /* Resources */,
+				C60B91781B3AF9A60000E035 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -385,6 +469,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/External/Sparkle/1.10",
+					"$(PROJECT_DIR)/External/Growl/Framework",
+					"$(PROJECT_DIR)/External/CocoaOniguruma",
+				);
 				INFOPLIST_FILE = "NicoLiveAlert/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -396,6 +486,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/External/Sparkle/1.10",
+					"$(PROJECT_DIR)/External/Growl/Framework",
+					"$(PROJECT_DIR)/External/CocoaOniguruma",
+				);
 				INFOPLIST_FILE = "NicoLiveAlert/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
