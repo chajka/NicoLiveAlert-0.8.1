@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C63A6E8C1B3ADF100022A385 /* NicoLiveAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = C63A6E8B1B3ADF100022A385 /* NicoLiveAlert.m */; };
-		C63A6E8E1B3ADF100022A385 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C63A6E8D1B3ADF100022A385 /* main.m */; };
+		C60B91551B3AE1B90000E035 /* NicoLiveAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = C60B91531B3AE1B90000E035 /* NicoLiveAlert.xib */; };
+		C60B91581B3AE1C90000E035 /* NicoLiveAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = C60B91561B3AE1C90000E035 /* NicoLiveAlert.m */; };
+		C60B915C1B3AE1E10000E035 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C60B915A1B3AE1E10000E035 /* main.m */; };
 		C63A6E901B3ADF100022A385 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63A6E8F1B3ADF100022A385 /* Images.xcassets */; };
-		C63A6E931B3ADF100022A385 /* NicoLiveAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63A6E911B3ADF100022A385 /* NicoLiveAlert.xib */; };
 		C63A6E9F1B3ADF100022A385 /* NicoLiveAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C63A6E9E1B3ADF100022A385 /* NicoLiveAlertTests.m */; };
 /* End PBXBuildFile section */
 
@@ -25,12 +25,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C60B91511B3AE05A0000E035 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NicoLiveAlert.xib; sourceTree = "<group>"; };
+		C60B91541B3AE1B90000E035 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Localizable/en.lproj/NicoLiveAlert.xib; sourceTree = "<group>"; };
+		C60B91561B3AE1C90000E035 /* NicoLiveAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NicoLiveAlert.m; path = Application/NicoLiveAlert.m; sourceTree = "<group>"; };
+		C60B91571B3AE1C90000E035 /* NicoLiveAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NicoLiveAlert.h; path = Application/NicoLiveAlert.h; sourceTree = "<group>"; };
+		C60B91591B3AE1E10000E035 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting Files/Info.plist"; sourceTree = "<group>"; };
+		C60B915A1B3AE1E10000E035 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Supporting Files/main.m"; sourceTree = "<group>"; };
 		C63A6E851B3ADF100022A385 /* NicoLiveAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NicoLiveAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C63A6E891B3ADF100022A385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C63A6E8A1B3ADF100022A385 /* NicoLiveAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NicoLiveAlert.h; sourceTree = "<group>"; };
-		C63A6E8B1B3ADF100022A385 /* NicoLiveAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NicoLiveAlert.m; sourceTree = "<group>"; };
-		C63A6E8D1B3ADF100022A385 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C63A6E8F1B3ADF100022A385 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C63A6E981B3ADF100022A385 /* NicoLiveAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NicoLiveAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63A6E9D1B3ADF100022A385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +55,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C60B91521B3AE1A90000E035 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C60B91571B3AE1C90000E035 /* NicoLiveAlert.h */,
+				C60B91561B3AE1C90000E035 /* NicoLiveAlert.m */,
+				C60B91531B3AE1B90000E035 /* NicoLiveAlert.xib */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
 		C63A6E7C1B3ADF100022A385 = {
 			isa = PBXGroup;
 			children = (
@@ -76,10 +86,8 @@
 		C63A6E871B3ADF100022A385 /* NicoLiveAlert */ = {
 			isa = PBXGroup;
 			children = (
-				C63A6E8A1B3ADF100022A385 /* NicoLiveAlert.h */,
-				C63A6E8B1B3ADF100022A385 /* NicoLiveAlert.m */,
+				C60B91521B3AE1A90000E035 /* Application */,
 				C63A6E8F1B3ADF100022A385 /* Images.xcassets */,
-				C63A6E911B3ADF100022A385 /* NicoLiveAlert.xib */,
 				C63A6E881B3ADF100022A385 /* Supporting Files */,
 			);
 			path = NicoLiveAlert;
@@ -88,8 +96,8 @@
 		C63A6E881B3ADF100022A385 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C63A6E891B3ADF100022A385 /* Info.plist */,
-				C63A6E8D1B3ADF100022A385 /* main.m */,
+				C60B91591B3AE1E10000E035 /* Info.plist */,
+				C60B915A1B3AE1E10000E035 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -192,7 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C63A6E901B3ADF100022A385 /* Images.xcassets in Resources */,
-				C63A6E931B3ADF100022A385 /* NicoLiveAlert.xib in Resources */,
+				C60B91551B3AE1B90000E035 /* NicoLiveAlert.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,8 +218,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C63A6E8E1B3ADF100022A385 /* main.m in Sources */,
-				C63A6E8C1B3ADF100022A385 /* NicoLiveAlert.m in Sources */,
+				C60B91581B3AE1C90000E035 /* NicoLiveAlert.m in Sources */,
+				C60B915C1B3AE1E10000E035 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,10 +242,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C63A6E911B3ADF100022A385 /* NicoLiveAlert.xib */ = {
+		C60B91531B3AE1B90000E035 /* NicoLiveAlert.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C60B91511B3AE05A0000E035 /* en */,
+				C60B91541B3AE1B90000E035 /* en */,
 			);
 			name = NicoLiveAlert.xib;
 			sourceTree = "<group>";
@@ -329,7 +337,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = NicoLiveAlert/Info.plist;
+				INFOPLIST_FILE = "NicoLiveAlert/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -340,7 +348,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = NicoLiveAlert/Info.plist;
+				INFOPLIST_FILE = "NicoLiveAlert/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
