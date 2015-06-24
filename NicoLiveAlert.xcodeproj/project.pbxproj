@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C63A6E8C1B3ADF100022A385 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C63A6E8B1B3ADF100022A385 /* AppDelegate.m */; };
+		C63A6E8C1B3ADF100022A385 /* NicoLiveAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = C63A6E8B1B3ADF100022A385 /* NicoLiveAlert.m */; };
 		C63A6E8E1B3ADF100022A385 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C63A6E8D1B3ADF100022A385 /* main.m */; };
 		C63A6E901B3ADF100022A385 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63A6E8F1B3ADF100022A385 /* Images.xcassets */; };
-		C63A6E931B3ADF100022A385 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63A6E911B3ADF100022A385 /* MainMenu.xib */; };
+		C63A6E931B3ADF100022A385 /* NicoLiveAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = C63A6E911B3ADF100022A385 /* NicoLiveAlert.xib */; };
 		C63A6E9F1B3ADF100022A385 /* NicoLiveAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C63A6E9E1B3ADF100022A385 /* NicoLiveAlertTests.m */; };
 /* End PBXBuildFile section */
 
@@ -25,13 +25,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C60B91511B3AE05A0000E035 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NicoLiveAlert.xib; sourceTree = "<group>"; };
 		C63A6E851B3ADF100022A385 /* NicoLiveAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NicoLiveAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63A6E891B3ADF100022A385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C63A6E8A1B3ADF100022A385 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C63A6E8B1B3ADF100022A385 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C63A6E8A1B3ADF100022A385 /* NicoLiveAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NicoLiveAlert.h; sourceTree = "<group>"; };
+		C63A6E8B1B3ADF100022A385 /* NicoLiveAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NicoLiveAlert.m; sourceTree = "<group>"; };
 		C63A6E8D1B3ADF100022A385 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C63A6E8F1B3ADF100022A385 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C63A6E921B3ADF100022A385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		C63A6E981B3ADF100022A385 /* NicoLiveAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NicoLiveAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63A6E9D1B3ADF100022A385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C63A6E9E1B3ADF100022A385 /* NicoLiveAlertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NicoLiveAlertTests.m; sourceTree = "<group>"; };
@@ -76,10 +76,10 @@
 		C63A6E871B3ADF100022A385 /* NicoLiveAlert */ = {
 			isa = PBXGroup;
 			children = (
-				C63A6E8A1B3ADF100022A385 /* AppDelegate.h */,
-				C63A6E8B1B3ADF100022A385 /* AppDelegate.m */,
+				C63A6E8A1B3ADF100022A385 /* NicoLiveAlert.h */,
+				C63A6E8B1B3ADF100022A385 /* NicoLiveAlert.m */,
 				C63A6E8F1B3ADF100022A385 /* Images.xcassets */,
-				C63A6E911B3ADF100022A385 /* MainMenu.xib */,
+				C63A6E911B3ADF100022A385 /* NicoLiveAlert.xib */,
 				C63A6E881B3ADF100022A385 /* Supporting Files */,
 			);
 			path = NicoLiveAlert;
@@ -192,7 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C63A6E901B3ADF100022A385 /* Images.xcassets in Resources */,
-				C63A6E931B3ADF100022A385 /* MainMenu.xib in Resources */,
+				C63A6E931B3ADF100022A385 /* NicoLiveAlert.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C63A6E8E1B3ADF100022A385 /* main.m in Sources */,
-				C63A6E8C1B3ADF100022A385 /* AppDelegate.m in Sources */,
+				C63A6E8C1B3ADF100022A385 /* NicoLiveAlert.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,12 +234,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C63A6E911B3ADF100022A385 /* MainMenu.xib */ = {
+		C63A6E911B3ADF100022A385 /* NicoLiveAlert.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C63A6E921B3ADF100022A385 /* Base */,
+				C60B91511B3AE05A0000E035 /* en */,
 			);
-			name = MainMenu.xib;
+			name = NicoLiveAlert.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -401,6 +401,7 @@
 				C63A6EA41B3ADF100022A385 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C63A6EA51B3ADF100022A385 /* Build configuration list for PBXNativeTarget "NicoLiveAlertTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +410,7 @@
 				C63A6EA71B3ADF100022A385 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
