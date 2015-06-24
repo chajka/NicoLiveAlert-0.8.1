@@ -12,6 +12,8 @@
 		C60B915C1B3AE1E10000E035 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C60B915A1B3AE1E10000E035 /* main.m */; };
 		C60B91621B3AE32E0000E035 /* YCStreamSessionGCD.m in Sources */ = {isa = PBXBuildFile; fileRef = C60B915E1B3AE32E0000E035 /* YCStreamSessionGCD.m */; };
 		C60B91631B3AE32E0000E035 /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = C60B91601B3AE32E0000E035 /* HTTPConnection.m */; };
+		C60B916A1B3AEDF70000E035 /* MASPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C60B91661B3AEDF70000E035 /* MASPreferencesWindowController.m */; };
+		C60B916B1B3AEDF70000E035 /* MASPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C60B91681B3AEDF70000E035 /* MASPreferencesWindow.xib */; };
 		C63A6E901B3ADF100022A385 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63A6E8F1B3ADF100022A385 /* Images.xcassets */; };
 		C63A6E9F1B3ADF100022A385 /* NicoLiveAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C63A6E9E1B3ADF100022A385 /* NicoLiveAlertTests.m */; };
 /* End PBXBuildFile section */
@@ -36,6 +38,10 @@
 		C60B915F1B3AE32E0000E035 /* YCStreamSessionGCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YCStreamSessionGCD.h; path = Network/YCStreamSessionGCD.h; sourceTree = "<group>"; };
 		C60B91601B3AE32E0000E035 /* HTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPConnection.m; path = Network/HTTPConnection.m; sourceTree = "<group>"; };
 		C60B91611B3AE32E0000E035 /* HTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPConnection.h; path = Network/HTTPConnection.h; sourceTree = "<group>"; };
+		C60B91661B3AEDF70000E035 /* MASPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MASPreferencesWindowController.m; path = Preference/MASPreferences/MASPreferencesWindowController.m; sourceTree = "<group>"; };
+		C60B91671B3AEDF70000E035 /* MASPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASPreferencesWindowController.h; path = Preference/MASPreferences/MASPreferencesWindowController.h; sourceTree = "<group>"; };
+		C60B91681B3AEDF70000E035 /* MASPreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MASPreferencesWindow.xib; path = Preference/MASPreferences/MASPreferencesWindow.xib; sourceTree = "<group>"; };
+		C60B91691B3AEDF70000E035 /* MASPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASPreferencesViewController.h; path = Preference/MASPreferences/MASPreferencesViewController.h; sourceTree = "<group>"; };
 		C63A6E851B3ADF100022A385 /* NicoLiveAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NicoLiveAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63A6E8F1B3ADF100022A385 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C63A6E981B3ADF100022A385 /* NicoLiveAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NicoLiveAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +88,25 @@
 			name = Network;
 			sourceTree = "<group>";
 		};
+		C60B91641B3AEDCC0000E035 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				C60B91651B3AEDDE0000E035 /* MASPreferences */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		C60B91651B3AEDDE0000E035 /* MASPreferences */ = {
+			isa = PBXGroup;
+			children = (
+				C60B91691B3AEDF70000E035 /* MASPreferencesViewController.h */,
+				C60B91671B3AEDF70000E035 /* MASPreferencesWindowController.h */,
+				C60B91661B3AEDF70000E035 /* MASPreferencesWindowController.m */,
+				C60B91681B3AEDF70000E035 /* MASPreferencesWindow.xib */,
+			);
+			name = MASPreferences;
+			sourceTree = "<group>";
+		};
 		C63A6E7C1B3ADF100022A385 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +130,7 @@
 			children = (
 				C60B915D1B3AE31B0000E035 /* Network */,
 				C60B91521B3AE1A90000E035 /* Application */,
+				C60B91641B3AEDCC0000E035 /* Preferences */,
 				C63A6E8F1B3ADF100022A385 /* Images.xcassets */,
 				C63A6E881B3ADF100022A385 /* Supporting Files */,
 			);
@@ -219,6 +245,7 @@
 			files = (
 				C63A6E901B3ADF100022A385 /* Images.xcassets in Resources */,
 				C60B91551B3AE1B90000E035 /* NicoLiveAlert.xib in Resources */,
+				C60B916B1B3AEDF70000E035 /* MASPreferencesWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +266,7 @@
 				C60B91581B3AE1C90000E035 /* NicoLiveAlert.m in Sources */,
 				C60B91621B3AE32E0000E035 /* YCStreamSessionGCD.m in Sources */,
 				C60B915C1B3AE1E10000E035 /* main.m in Sources */,
+				C60B916A1B3AEDF70000E035 /* MASPreferencesWindowController.m in Sources */,
 				C60B91631B3AE32E0000E035 /* HTTPConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
