@@ -1,3 +1,6 @@
 [submodule "NicoLiveAlert/Network"]
 	path = NicoLiveAlert/Network
 	url = https://github.com/chajka/NetworkBits.git
+[submodule "NicoLiveAlert/Preference/MASPreferences"]
+	path = NicoLiveAlert/Preference/MASPreferences
+	url = git://github.com/shpakovski/MASPreferences.git
