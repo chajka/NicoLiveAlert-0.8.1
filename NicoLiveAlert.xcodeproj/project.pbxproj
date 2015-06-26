@@ -23,6 +23,8 @@
 		C60B917E1B3AF9E30000E035 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C60B91721B3AF8C20000E035 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C63A6E901B3ADF100022A385 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63A6E8F1B3ADF100022A385 /* Images.xcassets */; };
 		C63A6E9F1B3ADF100022A385 /* NicoLiveAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C63A6E9E1B3ADF100022A385 /* NicoLiveAlertTests.m */; };
+		C6BDF92E1B3D3D580041F90F /* YCKeychainService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BDF92D1B3D3D580041F90F /* YCKeychainService.framework */; };
+		C6BDF92F1B3D3D670041F90F /* YCKeychainService.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C6BDF92D1B3D3D580041F90F /* YCKeychainService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
+				C6BDF92F1B3D3D670041F90F /* YCKeychainService.framework in Copy Frameworks */,
 				C60B917C1B3AF9D10000E035 /* CocoaOniguruma.framework in Copy Frameworks */,
 				C60B917D1B3AF9DB0000E035 /* Growl.framework in Copy Frameworks */,
 				C60B917E1B3AF9E30000E035 /* Sparkle.framework in Copy Frameworks */,
@@ -74,6 +77,7 @@
 		C63A6E981B3ADF100022A385 /* NicoLiveAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NicoLiveAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63A6E9D1B3ADF100022A385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C63A6E9E1B3ADF100022A385 /* NicoLiveAlertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NicoLiveAlertTests.m; sourceTree = "<group>"; };
+		C6BDF92D1B3D3D580041F90F /* YCKeychainService.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YCKeychainService.framework; path = External/YCKeychainService/YCKeychainService.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 			files = (
 				C60B917B1B3AF9C80000E035 /* QuartzCore.framework in Frameworks */,
 				C60B91771B3AF8D70000E035 /* CocoaOniguruma.framework in Frameworks */,
+				C6BDF92E1B3D3D580041F90F /* YCKeychainService.framework in Frameworks */,
 				C60B91751B3AF8CB0000E035 /* Growl.framework in Frameworks */,
 				C60B91731B3AF8C20000E035 /* Sparkle.framework in Frameworks */,
 			);
@@ -142,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				C60B91791B3AF9BE0000E035 /* QuartzCore.framework */,
+				C6BDF92C1B3D3D3A0041F90F /* YCKeychainService */,
 				C60B916F1B3AF7240000E035 /* CocoaOniguruma */,
 				C60B916E1B3AF7170000E035 /* Growl */,
 				C60B916D1B3AF7000000E035 /* Sparkle */,
@@ -244,6 +250,14 @@
 				C63A6E9D1B3ADF100022A385 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6BDF92C1B3D3D3A0041F90F /* YCKeychainService */ = {
+			isa = PBXGroup;
+			children = (
+				C6BDF92D1B3D3D580041F90F /* YCKeychainService.framework */,
+			);
+			name = YCKeychainService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -474,6 +488,7 @@
 					"$(PROJECT_DIR)/External/Sparkle/1.10",
 					"$(PROJECT_DIR)/External/Growl/Framework",
 					"$(PROJECT_DIR)/External/CocoaOniguruma",
+					"$(PROJECT_DIR)/External/YCKeychainService",
 				);
 				INFOPLIST_FILE = "NicoLiveAlert/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -491,6 +506,7 @@
 					"$(PROJECT_DIR)/External/Sparkle/1.10",
 					"$(PROJECT_DIR)/External/Growl/Framework",
 					"$(PROJECT_DIR)/External/CocoaOniguruma",
+					"$(PROJECT_DIR)/External/YCKeychainService",
 				);
 				INFOPLIST_FILE = "NicoLiveAlert/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
