@@ -7,8 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "MASPreferencesWindowController.h"
 
-@interface NicoLiveAlert : NSObject <NSApplicationDelegate>
+@interface NicoLiveAlert : NSObject <NSApplicationDelegate> {
+		// preference
+	BOOL							firstTimePreference;
+	MASPreferencesWindowController	*prefWindowController;
+}
 
 
 @end

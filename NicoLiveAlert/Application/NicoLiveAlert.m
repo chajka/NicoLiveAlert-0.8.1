@@ -18,19 +18,44 @@
 #pragma mark - class method
 #pragma mark - constructor / destructor
 #pragma mark - override
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-	// Insert code here to initialize your application
-}
+- (void) applicationWillFinishLaunching:(NSNotification *)notification
+{
+	firstTimePreference = YES;
+}// end - (void) applicationWillFinishLaunching:(NSNotification *)notification
 
-- (void)applicationWillTerminate:(NSNotification *)aNotification {
+- (void) applicationDidFinishLaunching:(NSNotification *)aNotification
+{
+	// Insert code here to initialize your application
+}// end - (void) applicationDidFinishLaunching:(NSNotification *)aNotification
+
+- (void) applicationWillTerminate:(NSNotification *)aNotification
+{
 	// Insert code here to tear down your application
-}
+}// end - (void) applicationWillTerminate:(NSNotification *)aNotification
 
 #pragma mark - delegate
 #pragma mark - properties
 #pragma mark - actions
+- (IBAction) openPreference:(id)sender
+{
+	@autoreleasepool {
+		NSWindowController *winController = [self preferencesWindowController];
+		if (firstTimePreference == YES) {
+			firstTimePreference = NO;
+			[prefWindowController selectControllerAtIndex:0];
+		}
+		[winController showWindow:nil];
+	}
+}// end - (IBAction) openPreference:(id)sender
 #pragma mark - messages
 #pragma mark - private
+- (MASPreferencesWindowController *) preferencesWindowController
+{
+	if (prefWindowController == nil) {
+	}// end if
+
+	return prefWindowController;
+}
 #pragma mark - C functions
 
 @end
