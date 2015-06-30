@@ -23,6 +23,8 @@
 		C60B917E1B3AF9E30000E035 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C60B91721B3AF8C20000E035 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C630C70D1B42CA5200128604 /* WatchlistController.m in Sources */ = {isa = PBXBuildFile; fileRef = C630C70B1B42CA5200128604 /* WatchlistController.m */; };
 		C630C70E1B42CA5200128604 /* WatchlistController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C630C70C1B42CA5200128604 /* WatchlistController.xib */; };
+		C630C7121B42CF5600128604 /* AccountController.m in Sources */ = {isa = PBXBuildFile; fileRef = C630C7101B42CF5600128604 /* AccountController.m */; };
+		C630C7131B42CF5600128604 /* AccountController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C630C7111B42CF5600128604 /* AccountController.xib */; };
 		C63A6E901B3ADF100022A385 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63A6E8F1B3ADF100022A385 /* Images.xcassets */; };
 		C63A6E9F1B3ADF100022A385 /* NicoLiveAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C63A6E9E1B3ADF100022A385 /* NicoLiveAlertTests.m */; };
 		C6BDF92E1B3D3D580041F90F /* YCKeychainService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BDF92D1B3D3D580041F90F /* YCKeychainService.framework */; };
@@ -77,6 +79,9 @@
 		C630C70A1B42CA5200128604 /* WatchlistController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WatchlistController.h; path = Preference/WatchlistController.h; sourceTree = "<group>"; };
 		C630C70B1B42CA5200128604 /* WatchlistController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WatchlistController.m; path = Preference/WatchlistController.m; sourceTree = "<group>"; };
 		C630C70C1B42CA5200128604 /* WatchlistController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WatchlistController.xib; path = Preference/WatchlistController.xib; sourceTree = "<group>"; };
+		C630C70F1B42CF5600128604 /* AccountController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountController.h; path = Preference/AccountController.h; sourceTree = "<group>"; };
+		C630C7101B42CF5600128604 /* AccountController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountController.m; path = Preference/AccountController.m; sourceTree = "<group>"; };
+		C630C7111B42CF5600128604 /* AccountController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AccountController.xib; path = Preference/AccountController.xib; sourceTree = "<group>"; };
 		C63A6E851B3ADF100022A385 /* NicoLiveAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NicoLiveAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63A6E8F1B3ADF100022A385 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C63A6E981B3ADF100022A385 /* NicoLiveAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NicoLiveAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +141,9 @@
 				C630C70A1B42CA5200128604 /* WatchlistController.h */,
 				C630C70B1B42CA5200128604 /* WatchlistController.m */,
 				C630C70C1B42CA5200128604 /* WatchlistController.xib */,
+				C630C70F1B42CF5600128604 /* AccountController.h */,
+				C630C7101B42CF5600128604 /* AccountController.m */,
+				C630C7111B42CF5600128604 /* AccountController.xib */,
 			);
 			name = Preferences;
 			sourceTree = "<group>";
@@ -353,6 +361,7 @@
 				C60B91551B3AE1B90000E035 /* NicoLiveAlert.xib in Resources */,
 				C60B916B1B3AEDF70000E035 /* MASPreferencesWindow.xib in Resources */,
 				C630C70E1B42CA5200128604 /* WatchlistController.xib in Resources */,
+				C630C7131B42CF5600128604 /* AccountController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C630C7121B42CF5600128604 /* AccountController.m in Sources */,
 				C60B91581B3AE1C90000E035 /* NicoLiveAlert.m in Sources */,
 				C630C70D1B42CA5200128604 /* WatchlistController.m in Sources */,
 				C60B91621B3AE32E0000E035 /* YCStreamSessionGCD.m in Sources */,
