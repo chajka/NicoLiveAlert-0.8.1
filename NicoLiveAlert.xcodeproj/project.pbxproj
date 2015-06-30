@@ -22,13 +22,13 @@
 		C60B917D1B3AF9DB0000E035 /* Growl.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C60B91741B3AF8CB0000E035 /* Growl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C60B917E1B3AF9E30000E035 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C60B91721B3AF8C20000E035 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C630C70D1B42CA5200128604 /* WatchlistController.m in Sources */ = {isa = PBXBuildFile; fileRef = C630C70B1B42CA5200128604 /* WatchlistController.m */; };
-		C630C70E1B42CA5200128604 /* WatchlistController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C630C70C1B42CA5200128604 /* WatchlistController.xib */; };
 		C630C7121B42CF5600128604 /* AccountController.m in Sources */ = {isa = PBXBuildFile; fileRef = C630C7101B42CF5600128604 /* AccountController.m */; };
-		C630C7131B42CF5600128604 /* AccountController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C630C7111B42CF5600128604 /* AccountController.xib */; };
 		C630C7171B42CFA600128604 /* CollaborationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C630C7151B42CFA600128604 /* CollaborationController.m */; };
-		C630C7181B42CFA600128604 /* CollaborationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C630C7161B42CFA600128604 /* CollaborationController.xib */; };
 		C630C71C1B42D15400128604 /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = C630C71A1B42D15400128604 /* AboutController.m */; };
-		C630C71D1B42D15400128604 /* AboutController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C630C71B1B42D15400128604 /* AboutController.xib */; };
+		C630C7261B42D24F00128604 /* AboutController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C630C71E1B42D24F00128604 /* AboutController.xib */; };
+		C630C7271B42D24F00128604 /* CollaborationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C630C7201B42D24F00128604 /* CollaborationController.xib */; };
+		C630C7281B42D24F00128604 /* AccountController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C630C7221B42D24F00128604 /* AccountController.xib */; };
+		C630C7291B42D24F00128604 /* WatchlistController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C630C7241B42D24F00128604 /* WatchlistController.xib */; };
 		C63A6E901B3ADF100022A385 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63A6E8F1B3ADF100022A385 /* Images.xcassets */; };
 		C63A6E9F1B3ADF100022A385 /* NicoLiveAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C63A6E9E1B3ADF100022A385 /* NicoLiveAlertTests.m */; };
 		C6BDF92E1B3D3D580041F90F /* YCKeychainService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BDF92D1B3D3D580041F90F /* YCKeychainService.framework */; };
@@ -82,16 +82,16 @@
 		C60B91791B3AF9BE0000E035 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C630C70A1B42CA5200128604 /* WatchlistController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WatchlistController.h; path = Preference/WatchlistController.h; sourceTree = "<group>"; };
 		C630C70B1B42CA5200128604 /* WatchlistController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WatchlistController.m; path = Preference/WatchlistController.m; sourceTree = "<group>"; };
-		C630C70C1B42CA5200128604 /* WatchlistController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WatchlistController.xib; path = Preference/WatchlistController.xib; sourceTree = "<group>"; };
 		C630C70F1B42CF5600128604 /* AccountController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountController.h; path = Preference/AccountController.h; sourceTree = "<group>"; };
 		C630C7101B42CF5600128604 /* AccountController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountController.m; path = Preference/AccountController.m; sourceTree = "<group>"; };
-		C630C7111B42CF5600128604 /* AccountController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AccountController.xib; path = Preference/AccountController.xib; sourceTree = "<group>"; };
 		C630C7141B42CFA600128604 /* CollaborationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollaborationController.h; path = Preference/CollaborationController.h; sourceTree = "<group>"; };
 		C630C7151B42CFA600128604 /* CollaborationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollaborationController.m; path = Preference/CollaborationController.m; sourceTree = "<group>"; };
-		C630C7161B42CFA600128604 /* CollaborationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollaborationController.xib; path = Preference/CollaborationController.xib; sourceTree = "<group>"; };
 		C630C7191B42D15400128604 /* AboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutController.h; path = Preference/AboutController.h; sourceTree = "<group>"; };
 		C630C71A1B42D15400128604 /* AboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutController.m; path = Preference/AboutController.m; sourceTree = "<group>"; };
-		C630C71B1B42D15400128604 /* AboutController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AboutController.xib; path = Preference/AboutController.xib; sourceTree = "<group>"; };
+		C630C71F1B42D24F00128604 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Localizable/en.lproj/AboutController.xib; sourceTree = "<group>"; };
+		C630C7211B42D24F00128604 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Localizable/en.lproj/CollaborationController.xib; sourceTree = "<group>"; };
+		C630C7231B42D24F00128604 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Localizable/en.lproj/AccountController.xib; sourceTree = "<group>"; };
+		C630C7251B42D24F00128604 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Localizable/en.lproj/WatchlistController.xib; sourceTree = "<group>"; };
 		C63A6E851B3ADF100022A385 /* NicoLiveAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NicoLiveAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63A6E8F1B3ADF100022A385 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C63A6E981B3ADF100022A385 /* NicoLiveAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NicoLiveAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,16 +150,16 @@
 				C60B91651B3AEDDE0000E035 /* MASPreferences */,
 				C630C70A1B42CA5200128604 /* WatchlistController.h */,
 				C630C70B1B42CA5200128604 /* WatchlistController.m */,
-				C630C70C1B42CA5200128604 /* WatchlistController.xib */,
+				C630C7241B42D24F00128604 /* WatchlistController.xib */,
 				C630C70F1B42CF5600128604 /* AccountController.h */,
 				C630C7101B42CF5600128604 /* AccountController.m */,
-				C630C7111B42CF5600128604 /* AccountController.xib */,
+				C630C7221B42D24F00128604 /* AccountController.xib */,
 				C630C7141B42CFA600128604 /* CollaborationController.h */,
 				C630C7151B42CFA600128604 /* CollaborationController.m */,
-				C630C7161B42CFA600128604 /* CollaborationController.xib */,
+				C630C7201B42D24F00128604 /* CollaborationController.xib */,
 				C630C7191B42D15400128604 /* AboutController.h */,
 				C630C71A1B42D15400128604 /* AboutController.m */,
-				C630C71B1B42D15400128604 /* AboutController.xib */,
+				C630C71E1B42D24F00128604 /* AboutController.xib */,
 			);
 			name = Preferences;
 			sourceTree = "<group>";
@@ -374,12 +374,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C63A6E901B3ADF100022A385 /* Images.xcassets in Resources */,
-				C630C71D1B42D15400128604 /* AboutController.xib in Resources */,
-				C630C7181B42CFA600128604 /* CollaborationController.xib in Resources */,
+				C630C7261B42D24F00128604 /* AboutController.xib in Resources */,
+				C630C7271B42D24F00128604 /* CollaborationController.xib in Resources */,
 				C60B91551B3AE1B90000E035 /* NicoLiveAlert.xib in Resources */,
 				C60B916B1B3AEDF70000E035 /* MASPreferencesWindow.xib in Resources */,
-				C630C70E1B42CA5200128604 /* WatchlistController.xib in Resources */,
-				C630C7131B42CF5600128604 /* AccountController.xib in Resources */,
+				C630C7291B42D24F00128604 /* WatchlistController.xib in Resources */,
+				C630C7281B42D24F00128604 /* AccountController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +434,38 @@
 				C60B91541B3AE1B90000E035 /* en */,
 			);
 			name = NicoLiveAlert.xib;
+			sourceTree = "<group>";
+		};
+		C630C71E1B42D24F00128604 /* AboutController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C630C71F1B42D24F00128604 /* en */,
+			);
+			name = AboutController.xib;
+			sourceTree = "<group>";
+		};
+		C630C7201B42D24F00128604 /* CollaborationController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C630C7211B42D24F00128604 /* en */,
+			);
+			name = CollaborationController.xib;
+			sourceTree = "<group>";
+		};
+		C630C7221B42D24F00128604 /* AccountController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C630C7231B42D24F00128604 /* en */,
+			);
+			name = AccountController.xib;
+			sourceTree = "<group>";
+		};
+		C630C7241B42D24F00128604 /* WatchlistController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C630C7251B42D24F00128604 /* en */,
+			);
+			name = WatchlistController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
