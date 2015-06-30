@@ -27,6 +27,8 @@
 		C630C7131B42CF5600128604 /* AccountController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C630C7111B42CF5600128604 /* AccountController.xib */; };
 		C630C7171B42CFA600128604 /* CollaborationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C630C7151B42CFA600128604 /* CollaborationController.m */; };
 		C630C7181B42CFA600128604 /* CollaborationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C630C7161B42CFA600128604 /* CollaborationController.xib */; };
+		C630C71C1B42D15400128604 /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = C630C71A1B42D15400128604 /* AboutController.m */; };
+		C630C71D1B42D15400128604 /* AboutController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C630C71B1B42D15400128604 /* AboutController.xib */; };
 		C63A6E901B3ADF100022A385 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63A6E8F1B3ADF100022A385 /* Images.xcassets */; };
 		C63A6E9F1B3ADF100022A385 /* NicoLiveAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C63A6E9E1B3ADF100022A385 /* NicoLiveAlertTests.m */; };
 		C6BDF92E1B3D3D580041F90F /* YCKeychainService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BDF92D1B3D3D580041F90F /* YCKeychainService.framework */; };
@@ -87,6 +89,9 @@
 		C630C7141B42CFA600128604 /* CollaborationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollaborationController.h; path = Preference/CollaborationController.h; sourceTree = "<group>"; };
 		C630C7151B42CFA600128604 /* CollaborationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollaborationController.m; path = Preference/CollaborationController.m; sourceTree = "<group>"; };
 		C630C7161B42CFA600128604 /* CollaborationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollaborationController.xib; path = Preference/CollaborationController.xib; sourceTree = "<group>"; };
+		C630C7191B42D15400128604 /* AboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutController.h; path = Preference/AboutController.h; sourceTree = "<group>"; };
+		C630C71A1B42D15400128604 /* AboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutController.m; path = Preference/AboutController.m; sourceTree = "<group>"; };
+		C630C71B1B42D15400128604 /* AboutController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AboutController.xib; path = Preference/AboutController.xib; sourceTree = "<group>"; };
 		C63A6E851B3ADF100022A385 /* NicoLiveAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NicoLiveAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63A6E8F1B3ADF100022A385 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C63A6E981B3ADF100022A385 /* NicoLiveAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NicoLiveAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +157,9 @@
 				C630C7141B42CFA600128604 /* CollaborationController.h */,
 				C630C7151B42CFA600128604 /* CollaborationController.m */,
 				C630C7161B42CFA600128604 /* CollaborationController.xib */,
+				C630C7191B42D15400128604 /* AboutController.h */,
+				C630C71A1B42D15400128604 /* AboutController.m */,
+				C630C71B1B42D15400128604 /* AboutController.xib */,
 			);
 			name = Preferences;
 			sourceTree = "<group>";
@@ -366,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C63A6E901B3ADF100022A385 /* Images.xcassets in Resources */,
+				C630C71D1B42D15400128604 /* AboutController.xib in Resources */,
 				C630C7181B42CFA600128604 /* CollaborationController.xib in Resources */,
 				C60B91551B3AE1B90000E035 /* NicoLiveAlert.xib in Resources */,
 				C60B916B1B3AEDF70000E035 /* MASPreferencesWindow.xib in Resources */,
@@ -392,6 +401,7 @@
 				C630C7171B42CFA600128604 /* CollaborationController.m in Sources */,
 				C60B91581B3AE1C90000E035 /* NicoLiveAlert.m in Sources */,
 				C630C70D1B42CA5200128604 /* WatchlistController.m in Sources */,
+				C630C71C1B42D15400128604 /* AboutController.m in Sources */,
 				C60B91621B3AE32E0000E035 /* YCStreamSessionGCD.m in Sources */,
 				C60B915C1B3AE1E10000E035 /* main.m in Sources */,
 				C60B916A1B3AEDF70000E035 /* MASPreferencesWindowController.m in Sources */,
