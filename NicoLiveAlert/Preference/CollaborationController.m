@@ -14,14 +14,18 @@
 @end
 
 @implementation CollaborationController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do view setup here.
-}
 #pragma mark - synthesize properties
 #pragma mark - class method
 #pragma mark - constructor / destructor
+- (id) init
+{
+	self = [super initWithNibName:CollaborationNibName bundle:nil];
+	if (self) {
+		
+	}// end if
+
+	return self;
+}// end - (id) init
 #pragma mark - override
 #pragma mark -
 #pragma mark MASPreferencesViewController protocol methods

@@ -8,6 +8,11 @@
 
 #import "NicoLiveAlert.h"
 
+#import "WatchlistController.h"
+#import "AccountController.h"
+#import "CollaborationController.h"
+#import "AboutController.h"
+
 @interface NicoLiveAlert ()
 
 @property (weak) IBOutlet NSWindow *window;
@@ -52,6 +57,12 @@
 - (MASPreferencesWindowController *) preferencesWindowController
 {
 	if (prefWindowController == nil) {
+		WatchlistController *watch = [[WatchlistController alloc] init];
+		AccountController *account = [[AccountController alloc] init];
+		CollaborationController *collabo = [[CollaborationController alloc] init];
+		AboutController *about = [[AboutController alloc] init];
+		NSArray *controllers = [NSArray arrayWithObjects:watch, account, collabo, about, nil];
+		prefWindowController = [[MASPreferencesWindowController alloc] initWithViewControllers:controllers];
 	}// end if
 
 	return prefWindowController;

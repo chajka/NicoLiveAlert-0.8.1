@@ -31,6 +31,13 @@
 		C630C7291B42D24F00128604 /* WatchlistController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C630C7241B42D24F00128604 /* WatchlistController.xib */; };
 		C63A6E901B3ADF100022A385 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63A6E8F1B3ADF100022A385 /* Images.xcassets */; };
 		C63A6E9F1B3ADF100022A385 /* NicoLiveAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C63A6E9E1B3ADF100022A385 /* NicoLiveAlertTests.m */; };
+		C69B2CB01B44E777002233FB /* NicoLiveAlert.icns in Resources */ = {isa = PBXBuildFile; fileRef = C69B2CAF1B44E777002233FB /* NicoLiveAlert.icns */; };
+		C69B2CB41B44E78B002233FB /* watch.png in Resources */ = {isa = PBXBuildFile; fileRef = C69B2CB11B44E78B002233FB /* watch.png */; };
+		C69B2CB51B44E78B002233FB /* sbicon.png in Resources */ = {isa = PBXBuildFile; fileRef = C69B2CB21B44E78B002233FB /* sbicon.png */; };
+		C69B2CB61B44E78B002233FB /* Applications.png in Resources */ = {isa = PBXBuildFile; fileRef = C69B2CB31B44E78B002233FB /* Applications.png */; };
+		C69B2CB81B44E8D7002233FB /* Password.png in Resources */ = {isa = PBXBuildFile; fileRef = C69B2CB71B44E8D7002233FB /* Password.png */; };
+		C69B2CBB1B451505002233FB /* UsersDefault.plist in Resources */ = {isa = PBXBuildFile; fileRef = C69B2CBA1B451505002233FB /* UsersDefault.plist */; };
+		C69B2CBD1B45245F002233FB /* About.png in Resources */ = {isa = PBXBuildFile; fileRef = C69B2CBC1B45245F002233FB /* About.png */; };
 		C6BDF92E1B3D3D580041F90F /* YCKeychainService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BDF92D1B3D3D580041F90F /* YCKeychainService.framework */; };
 		C6BDF92F1B3D3D670041F90F /* YCKeychainService.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C6BDF92D1B3D3D580041F90F /* YCKeychainService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -50,7 +57,7 @@
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 7;
+			dstSubfolderSpec = 10;
 			files = (
 				C6BDF92F1B3D3D670041F90F /* YCKeychainService.framework in Copy Frameworks */,
 				C60B917C1B3AF9D10000E035 /* CocoaOniguruma.framework in Copy Frameworks */,
@@ -97,6 +104,14 @@
 		C63A6E981B3ADF100022A385 /* NicoLiveAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NicoLiveAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63A6E9D1B3ADF100022A385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C63A6E9E1B3ADF100022A385 /* NicoLiveAlertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NicoLiveAlertTests.m; sourceTree = "<group>"; };
+		C69B2CAF1B44E777002233FB /* NicoLiveAlert.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = NicoLiveAlert.icns; path = Images/NicoLiveAlert.icns; sourceTree = SOURCE_ROOT; };
+		C69B2CB11B44E78B002233FB /* watch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = watch.png; path = Images/watch.png; sourceTree = SOURCE_ROOT; };
+		C69B2CB21B44E78B002233FB /* sbicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sbicon.png; path = Images/sbicon.png; sourceTree = SOURCE_ROOT; };
+		C69B2CB31B44E78B002233FB /* Applications.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Applications.png; path = Images/Applications.png; sourceTree = SOURCE_ROOT; };
+		C69B2CB71B44E8D7002233FB /* Password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Password.png; path = Images/Password.png; sourceTree = SOURCE_ROOT; };
+		C69B2CB91B451479002233FB /* NicoLiveAlertPreferencesDefinitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NicoLiveAlertPreferencesDefinitions.h; path = Preference/NicoLiveAlertPreferencesDefinitions.h; sourceTree = "<group>"; };
+		C69B2CBA1B451505002233FB /* UsersDefault.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = UsersDefault.plist; path = Preference/UsersDefault.plist; sourceTree = "<group>"; };
+		C69B2CBC1B45245F002233FB /* About.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = About.png; path = Images/About.png; sourceTree = SOURCE_ROOT; };
 		C6BDF92D1B3D3D580041F90F /* YCKeychainService.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YCKeychainService.framework; path = External/YCKeychainService/YCKeychainService.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -147,6 +162,8 @@
 		C60B91641B3AEDCC0000E035 /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
+				C69B2CB91B451479002233FB /* NicoLiveAlertPreferencesDefinitions.h */,
+				C69B2CBA1B451505002233FB /* UsersDefault.plist */,
 				C60B91651B3AEDDE0000E035 /* MASPreferences */,
 				C630C70A1B42CA5200128604 /* WatchlistController.h */,
 				C630C70B1B42CA5200128604 /* WatchlistController.m */,
@@ -252,6 +269,7 @@
 				C60B91521B3AE1A90000E035 /* Application */,
 				C60B91641B3AEDCC0000E035 /* Preferences */,
 				C63A6E8F1B3ADF100022A385 /* Images.xcassets */,
+				C69B2CAE1B44E761002233FB /* Images */,
 				C63A6E881B3ADF100022A385 /* Supporting Files */,
 				C60B916C1B3AF6DE0000E035 /* Frameworks */,
 			);
@@ -282,6 +300,19 @@
 				C63A6E9D1B3ADF100022A385 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C69B2CAE1B44E761002233FB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C69B2CB11B44E78B002233FB /* watch.png */,
+				C69B2CB71B44E8D7002233FB /* Password.png */,
+				C69B2CB31B44E78B002233FB /* Applications.png */,
+				C69B2CBC1B45245F002233FB /* About.png */,
+				C69B2CB21B44E78B002233FB /* sbicon.png */,
+				C69B2CAF1B44E777002233FB /* NicoLiveAlert.icns */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		C6BDF92C1B3D3D3A0041F90F /* YCKeychainService */ = {
@@ -374,11 +405,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C63A6E901B3ADF100022A385 /* Images.xcassets in Resources */,
+				C69B2CBB1B451505002233FB /* UsersDefault.plist in Resources */,
 				C630C7261B42D24F00128604 /* AboutController.xib in Resources */,
+				C69B2CB81B44E8D7002233FB /* Password.png in Resources */,
+				C69B2CB61B44E78B002233FB /* Applications.png in Resources */,
+				C69B2CB41B44E78B002233FB /* watch.png in Resources */,
+				C69B2CB51B44E78B002233FB /* sbicon.png in Resources */,
 				C630C7271B42D24F00128604 /* CollaborationController.xib in Resources */,
 				C60B91551B3AE1B90000E035 /* NicoLiveAlert.xib in Resources */,
+				C69B2CBD1B45245F002233FB /* About.png in Resources */,
 				C60B916B1B3AEDF70000E035 /* MASPreferencesWindow.xib in Resources */,
 				C630C7291B42D24F00128604 /* WatchlistController.xib in Resources */,
+				C69B2CB01B44E777002233FB /* NicoLiveAlert.icns in Resources */,
 				C630C7281B42D24F00128604 /* AccountController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

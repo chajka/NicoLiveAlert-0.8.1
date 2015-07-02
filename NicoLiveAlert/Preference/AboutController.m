@@ -14,13 +14,17 @@
 @end
 
 @implementation AboutController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do view setup here.
-}
 #pragma mark - synthesize properties
 #pragma mark - class method
+- (id) init
+{
+	self = [super initWithNibName:AboutNibName bundle:nil];
+	if (self) {
+		
+	}// end if
+
+	return self;
+}// end - (id) init
 #pragma mark - constructor / destructor
 #pragma mark - override
 #pragma mark -

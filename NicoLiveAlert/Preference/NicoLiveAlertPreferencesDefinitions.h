@@ -13,20 +13,24 @@
 #define WatchlistIdentifier						@"Watchlist"
 #define WatchlistIconName						@"watch"
 #define WatchlistTitileName						NSLocalizedString(@"WatchlistTitleName", @"")
+#define WatchlistNibName						@"WatchlistController"
 
 #pragma mark - Accounts Preference
 #define AccountsIdentifier						@"Account"
 #define AccountsIconName						@"Password"
 #define AccountsTitileName						NSLocalizedString(@"PasswordTitleName", @"")
+#define AccountsNibName							@"AccountController"
 
 #pragma mark - Collaboration Preference
 #define CollaborationIdentifier					@"Collaboration"
 #define CollaborationIconName					@"Applications"
 #define CollaborationTitileName					NSLocalizedString(@"CollaborationTitleName", @"")
+#define CollaborationNibName					@"CollaborationController"
 
 #pragma mark - About Preference
 #define AboutIdentifier							@"About"
 #define AboutIconName							@"About"
 #define AboutTitileName							NSLocalizedString(@"AboutTitleName", @"")
+#define AboutNibName							@"AboutController"
 
 #endif

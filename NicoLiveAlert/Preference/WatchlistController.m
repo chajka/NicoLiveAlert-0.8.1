@@ -12,13 +12,13 @@
 @interface WatchlistController ()
 
 @end
-#define WatchlistNibName						@"WatchlistController"
 
 @implementation WatchlistController
 #pragma mark - synthesize properties
 #pragma mark - class method
 #pragma mark - constructor / destructor
-- (id) init {
+- (id) init
+{
 	self = [super initWithNibName:WatchlistNibName bundle:nil];
 	if (self) {
 		

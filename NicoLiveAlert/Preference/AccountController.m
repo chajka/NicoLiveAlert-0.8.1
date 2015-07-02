@@ -14,13 +14,17 @@
 @end
 
 @implementation AccountController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do view setup here.
-}
 #pragma mark - synthesize properties
 #pragma mark - class method
+- (id) init
+{
+	self = [super initWithNibName:AccountsNibName bundle:nil];
+	if (self) {
+		
+	}
+
+	return self;
+}// end - (id) init
 #pragma mark - constructor / destructor
 #pragma mark - override
 #pragma mark -
