@@ -15,6 +15,9 @@
 #define WatchlistTitileName						NSLocalizedString(@"WatchlistTitleName", @"")
 
 #pragma mark - Accounts Preference
+#define AccountsIdentifier						@"Account"
+#define AccountsIconName						@"Password"
+#define AccountsTitileName						NSLocalizedString(@"PasswordTitleName", @"")
 
 #pragma mark - Collaboration Preference
 
