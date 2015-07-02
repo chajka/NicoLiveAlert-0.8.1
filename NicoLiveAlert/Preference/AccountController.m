@@ -7,6 +7,7 @@
 //
 
 #import "AccountController.h"
+#import "NicoLiveAlertPreferencesDefinitions.h"
 
 @interface AccountController ()
 
@@ -27,17 +28,17 @@
 
 - (NSString *)identifier
 {
-	return @"Account";
+	return AccountsIdentifier;
 }// end - (NSString *)identifier
 
 - (NSImage *)toolbarItemImage
 {
-	return [NSImage imageNamed:@"Password"];
+	return [NSImage imageNamed:AccountsIconName];
 }// end - (NSImage *)toolbarItemImage
 
 - (NSString *)toolbarItemLabel
 {
-	return @"Account";
+	return AccountsTitileName;
 }// end - (NSString *)toolbarItemLabel
 
 #pragma mark - delegate
