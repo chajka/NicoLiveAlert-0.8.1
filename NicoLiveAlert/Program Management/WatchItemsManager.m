@@ -40,6 +40,14 @@
 #pragma mark - properties
 #pragma mark - actions
 #pragma mark - messages
+- (void) addCommunities:(NSArray *)commus
+{
+	NSNumber *no = [NSNumber numberWithBool:NO];
+	for (NSString *community in commus) {
+		if ([watchlist valueForKey:community] == nil)
+			[watchlist setValue:no forKey:community];
+	}// end foreach communities
+}// end - (void) addCommunities:(NSArray *)commus
 #pragma mark - private
 - (void) loadManualWatchlist
 {
