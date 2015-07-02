@@ -55,8 +55,6 @@
 		NSString *watchItem = [item objectForKey:WatchlistItemKey];
 		[watchlist setValue:autoOpen forKey:watchItem];
 	}// end foreach manualWatchItems
-
-	NSLog(@"%@", watchlist);
 }// end - (void) makeWatchList
 #pragma mark - C functions
 
