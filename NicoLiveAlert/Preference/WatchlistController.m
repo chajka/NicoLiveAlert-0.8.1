@@ -7,6 +7,7 @@
 //
 
 #import "WatchlistController.h"
+#import "NicoLiveAlertPreferencesDefinitions.h"
 
 @interface WatchlistController ()
 
@@ -18,5 +19,33 @@
     [super viewDidLoad];
     // Do view setup here.
 }
+#pragma mark - synthesize properties
+#pragma mark - class method
+#pragma mark - constructor / destructor
+#pragma mark - override
+#pragma mark -
+#pragma mark MASPreferencesViewController protocol methods
+
+- (NSString *)identifier
+{
+	return WatchlistIdentifier;
+}// end - (NSString *)identifier
+
+- (NSImage *)toolbarItemImage
+{
+	return [NSImage imageNamed:WatchlistIconName];
+}// end - (NSImage *)toolbarItemImage
+
+- (NSString *)toolbarItemLabel
+{
+	return WatchlistTitileName;
+}// end - (NSString *)toolbarItemLabel
+
+#pragma mark - delegate
+#pragma mark - properties
+#pragma mark - actions
+#pragma mark - messages
+#pragma mark - private
+#pragma mark - C functions
 
 @end

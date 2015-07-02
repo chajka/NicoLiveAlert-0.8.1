@@ -9,5 +9,15 @@
 #ifndef NicoLiveAlert_NicoLiveAlertPreferencesDefinitions_h
 #define NicoLiveAlert_NicoLiveAlertPreferencesDefinitions_h
 
+#pragma mark - Watchlist Preference
+#define WatchlistIdentifier						@"Watchlist"
+#define WatchlistIconName						@"watch"
+#define WatchlistTitileName						NSLocalizedString(@"WatchlistTitleName", @"")
+
+#pragma mark - Accounts Preference
+
+#pragma mark - Collaboration Preference
+
+#pragma mark - About Preference
 
 #endif
