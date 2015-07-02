@@ -20,6 +20,9 @@
 #define AccountsTitileName						NSLocalizedString(@"PasswordTitleName", @"")
 
 #pragma mark - Collaboration Preference
+#define CollaborationIdentifier					@"Collaboration"
+#define CollaborationIconName					@"Applications"
+#define CollaborationTitileName					NSLocalizedString(@"CollaborationTitleName", @"")
 
 #pragma mark - About Preference
 

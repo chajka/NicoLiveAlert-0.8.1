@@ -12,16 +12,20 @@
 @interface WatchlistController ()
 
 @end
+#define WatchlistNibName						@"WatchlistController"
 
 @implementation WatchlistController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do view setup here.
-}
 #pragma mark - synthesize properties
 #pragma mark - class method
 #pragma mark - constructor / destructor
+- (id) init {
+	self = [super initWithNibName:WatchlistNibName bundle:nil];
+	if (self) {
+		
+	}// end if self
+
+	return self;
+}// end - (id) init
 #pragma mark - override
 #pragma mark -
 #pragma mark MASPreferencesViewController protocol methods
