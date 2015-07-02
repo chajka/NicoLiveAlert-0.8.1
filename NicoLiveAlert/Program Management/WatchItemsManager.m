@@ -10,6 +10,11 @@
 #import "NicoLiveAlertDefinitions.h"
 #import "NicoLiveAlertPreferencesDefinitions.h"
 
+@interface WatchItemsManager ()
+- (void) loadManualWatchlist;
+- (void) makeWatchList;
+@end
+
 @implementation WatchItemsManager
 #pragma mark - synthesize properties
 @synthesize watchlist;
@@ -25,6 +30,7 @@
 		manualWatchItems = [[NSMutableArray alloc] init];
 	
 		[self loadManualWatchlist];
+		[self makeWatchList];
 	}// end if self
 
 	return self;
@@ -41,6 +47,17 @@
 	NSArray *prefWatchlistItems = [ud arrayForKey:SavedManualWatchList];
 	manualWatchItems = [[NSMutableArray alloc] initWithArray:prefWatchlistItems];
 }// - (void) loadManualWatchlist
+
+- (void) makeWatchList
+{
+	for (NSDictionary *item in manualWatchItems) {
+		NSNumber *autoOpen = [item objectForKey:WatchlistAutoOpenKey];
+		NSString *watchItem = [item objectForKey:WatchlistItemKey];
+		[watchlist setValue:autoOpen forKey:watchItem];
+	}// end foreach manualWatchItems
+
+	NSLog(@"%@", watchlist);
+}// end - (void) makeWatchList
 #pragma mark - C functions
 
 @end
