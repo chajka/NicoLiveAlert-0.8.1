@@ -48,6 +48,22 @@
 			[watchlist setValue:no forKey:community];
 	}// end foreach communities
 }// end - (void) addCommunities:(NSArray *)commus
+
+- (BOOL) removeLive:(NSString *)liveID
+{
+	[watchlist setValue:nil forKey:liveID];
+
+	for (NSDictionary *item in [manualWatchItems reverseObjectEnumerator]) {
+		if ([[item valueForKey:WatchlistItemKey] isEqualToString:liveID]) {
+			[manualWatchItems removeObject:item];
+			[[NSUserDefaults standardUserDefaults] setObject:manualWatchItems forKey:SavedManualWatchList];
+			return YES;
+		}// end if found live
+	}// end foreach
+
+	return NO;
+}// end - (void) removeLive:(NSString *)liveID
+
 #pragma mark - private
 - (void) loadManualWatchlist
 {

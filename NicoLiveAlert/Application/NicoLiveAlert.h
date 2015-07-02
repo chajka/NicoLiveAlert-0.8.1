@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "MASPreferencesWindowController.h"
 
+#import "WatchlistController.h"
 #import "WatchItemsManager.h"
 
 @interface NicoLiveAlert : NSObject <NSApplicationDelegate> {
@@ -16,6 +17,7 @@
 	BOOL							firstTimePreference;
 	MASPreferencesWindowController	*prefWindowController;
 
+	WatchlistController				*manualWatchListController;
 	WatchItemsManager				*watchItemsManager;
 }
 

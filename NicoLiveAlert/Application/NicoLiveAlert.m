@@ -68,11 +68,11 @@
 - (MASPreferencesWindowController *) preferencesWindowController
 {
 	if (prefWindowController == nil) {
-		WatchlistController *watch = [[WatchlistController alloc] initWithWatchlist:watchItemsManager.manualWatchItems];
+		manualWatchListController = [[WatchlistController alloc] initWithWatchlist:watchItemsManager.manualWatchItems];
 		AccountController *account = [[AccountController alloc] init];
 		CollaborationController *collabo = [[CollaborationController alloc] init];
 		AboutController *about = [[AboutController alloc] init];
-		NSArray *controllers = [NSArray arrayWithObjects:watch, account, collabo, about, nil];
+		NSArray *controllers = [NSArray arrayWithObjects:manualWatchListController, account, collabo, about, nil];
 		prefWindowController = [[MASPreferencesWindowController alloc] initWithViewControllers:controllers];
 	}// end if
 

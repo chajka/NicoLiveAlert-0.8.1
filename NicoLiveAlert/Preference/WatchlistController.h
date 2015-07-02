@@ -23,5 +23,6 @@
 }
 - (id) initWithWatchlist:(NSArray *)list;
 - (void) setManualWatchList:(NSArray *)watchlist;
+- (void) removeLive:(NSString *)liveID;
 
 @end

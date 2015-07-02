@@ -16,4 +16,5 @@
 @property (readonly) NSMutableArray			*manualWatchItems;
 
 - (void) addCommunities:(NSArray *)communities;
+- (BOOL) removeLive:(NSString *)liveID;
 @end

@@ -95,6 +95,16 @@
 		[aryctrlWatchlist addObject:item];
 	}
 }// end - (void) setManualWatchList:(NSArray *)watchlist
+
+- (void) removeLive:(NSString *)liveID
+{
+	for (NSDictionary *item in [[aryctrlWatchlist arrangedObjects] reverseObjectEnumerator]) {
+		if ([[item valueForKey:WatchlistItemKey] isEqualToString:liveID]) {
+			[aryctrlWatchlist removeObject:item];
+			break;
+		}// end if found live
+	}// end foreach
+}// end - (void) removeLive:(NSString *)liveID
 #pragma mark - private
 #pragma mark - C functions
 #pragma mark - NSTableView delegae methods
