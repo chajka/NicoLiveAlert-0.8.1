@@ -16,7 +16,7 @@
 #define WatchlistNibName						@"WatchlistController"
 
 #define WatchlistAutoOpenKey					@"AutoOpen"
-#define WatchlistItemKey						@"Item"
+#define WatchlistItemKey						@"WatchItem"
 #define WatchlistNoteKey						@"Note"
 
 #pragma mark - preference key

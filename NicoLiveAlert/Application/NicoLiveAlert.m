@@ -30,7 +30,8 @@
 	NSString *defaultsPath = [bundle pathForResource:UsersDefaultFileName ofType:UsersDefaultResourceType];
 	NSDictionary *defaults = [NSDictionary dictionaryWithContentsOfFile:defaultsPath];
 	[[NSUserDefaults standardUserDefaults] registerDefaults:defaults];
-	
+
+	watchItemsManager = [[WatchItemsManager alloc] init];
 }// end - (void) awakeFromNib
 
 - (void) applicationWillFinishLaunching:(NSNotification *)notification
@@ -67,7 +68,7 @@
 - (MASPreferencesWindowController *) preferencesWindowController
 {
 	if (prefWindowController == nil) {
-		WatchlistController *watch = [[WatchlistController alloc] init];
+		WatchlistController *watch = [[WatchlistController alloc] initWithWatchlist:watchItemsManager.manualWatchItems];
 		AccountController *account = [[AccountController alloc] init];
 		CollaborationController *collabo = [[CollaborationController alloc] init];
 		AboutController *about = [[AboutController alloc] init];

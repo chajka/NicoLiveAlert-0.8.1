@@ -13,6 +13,8 @@
 @implementation WatchItemsManager
 #pragma mark - synthesize properties
 @synthesize watchlist;
+@synthesize manualWatchItems;
+
 #pragma mark - class method
 #pragma mark - constructor / destructor
 - (id) init
@@ -21,6 +23,8 @@
 	if (self) {
 		watchlist = [[NSMutableDictionary alloc] init];
 		manualWatchItems = [[NSMutableArray alloc] init];
+	
+		[self loadManualWatchlist];
 	}// end if self
 
 	return self;
@@ -35,16 +39,7 @@
 {
 	NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
 	NSArray *prefWatchlistItems = [ud arrayForKey:SavedManualWatchList];
-	for (NSArray *item in prefWatchlistItems) {
-		NSMutableDictionary *tmpWatchListItem = [NSMutableDictionary dictionary];
-		NSNumber *autoOpen = [item objectAtIndex:2];
-		[tmpWatchListItem setValue:autoOpen forKey:WatchlistAutoOpenKey];
-		NSString *watchItem = [item objectAtIndex:0];
-		[tmpWatchListItem setValue:watchItem forKey:WatchlistItemKey];
-		NSString *watchNote = [item objectAtIndex:1];
-		[tmpWatchListItem setValue:watchNote forKey:WatchlistNoteKey];
-		[manualWatchItems addObject:tmpWatchListItem];
-	}// end foreach prefWatchlistItems
+	manualWatchItems = [[NSMutableArray alloc] initWithArray:prefWatchlistItems];
 }// - (void) loadManualWatchlist
 #pragma mark - C functions
 

@@ -116,6 +116,7 @@
 		C69B2CBE1B453314002233FB /* NicoLiveAlertDefinitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NicoLiveAlertDefinitions.h; path = Application/NicoLiveAlertDefinitions.h; sourceTree = "<group>"; };
 		C69B2CC01B45504B002233FB /* WatchItemsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WatchItemsManager.h; path = "Program Management/WatchItemsManager.h"; sourceTree = "<group>"; };
 		C69B2CC11B45504B002233FB /* WatchItemsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WatchItemsManager.m; path = "Program Management/WatchItemsManager.m"; sourceTree = "<group>"; };
+		C69B2CC31B455B30002233FB /* NicoLiveAlert.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NicoLiveAlert.entitlements; sourceTree = "<group>"; };
 		C6BDF92D1B3D3D580041F90F /* YCKeychainService.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YCKeychainService.framework; path = External/YCKeychainService/YCKeychainService.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -270,6 +271,7 @@
 		C63A6E871B3ADF100022A385 /* NicoLiveAlert */ = {
 			isa = PBXGroup;
 			children = (
+				C69B2CC31B455B30002233FB /* NicoLiveAlert.entitlements */,
 				C69B2CBF1B454E83002233FB /* Program Management */,
 				C60B915D1B3AE31B0000E035 /* Network */,
 				C60B91521B3AE1A90000E035 /* Application */,
@@ -388,6 +390,11 @@
 				TargetAttributes = {
 					C63A6E841B3ADF100022A385 = {
 						CreatedOnToolsVersion = 6.3.2;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					C63A6E971B3ADF100022A385 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -608,6 +615,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NicoLiveAlert/NicoLiveAlert.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -626,6 +634,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NicoLiveAlert/NicoLiveAlert.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

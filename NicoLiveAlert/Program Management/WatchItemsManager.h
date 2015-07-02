@@ -13,4 +13,5 @@
 	NSMutableArray						*manualWatchItems;
 }
 @property (readonly) NSMutableDictionary	*watchlist;
+@property (readonly) NSMutableArray			*manualWatchItems;
 @end

@@ -10,6 +10,7 @@
 
 @interface WatchlistController : NSViewController {
 	IBOutlet NSArrayController			*aryctrlWatchlist;
+	IBOutlet NSTableView				*tblviewManualWatchList;
 	
 	IBOutlet NSTextField				*watchItem;
 	IBOutlet NSTextField				*watchItemNote;
@@ -18,6 +19,9 @@
 	IBOutlet NSButton					*btnDeleteItem;
 
 	NSInteger							selectedRow;
+	NSArray								*watchList;
 }
+- (id) initWithWatchlist:(NSArray *)list;
+- (void) setManualWatchList:(NSArray *)watchlist;
 
 @end

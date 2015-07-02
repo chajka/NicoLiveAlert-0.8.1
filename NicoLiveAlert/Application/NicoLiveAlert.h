@@ -9,10 +9,14 @@
 #import <Cocoa/Cocoa.h>
 #import "MASPreferencesWindowController.h"
 
+#import "WatchItemsManager.h"
+
 @interface NicoLiveAlert : NSObject <NSApplicationDelegate> {
 		// preference
 	BOOL							firstTimePreference;
 	MASPreferencesWindowController	*prefWindowController;
+
+	WatchItemsManager				*watchItemsManager;
 }
 
 

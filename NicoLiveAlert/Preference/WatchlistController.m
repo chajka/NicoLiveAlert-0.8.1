@@ -18,16 +18,22 @@
 #pragma mark - synthesize properties
 #pragma mark - class method
 #pragma mark - constructor / destructor
-- (id) init
+- (id) initWithWatchlist:(NSArray *)list
 {
 	self = [super initWithNibName:WatchlistNibName bundle:nil];
 	if (self) {
-		
+		watchList = list;
 	}// end if self
 
 	return self;
 }// end - (id) init
 #pragma mark - override
+- (void) awakeFromNib
+{
+	[aryctrlWatchlist addObjects:watchList];
+	[tblviewManualWatchList deselectAll:self];
+}// - (void) awakeFromNib
+
 - (void) controlTextDidChange:(NSNotification *)obj
 {
 	if (![[watchItem stringValue] isEqualToString:EmptyString])
@@ -83,6 +89,12 @@
 	[btnDeleteItem setEnabled:NO];
 }// end - (IBAction) deleteWatchItem:(id)sender
 #pragma mark - messages
+- (void) setManualWatchList:(NSArray *)watchlist
+{
+	for (NSDictionary *item in watchlist) {
+		[aryctrlWatchlist addObject:item];
+	}
+}// end - (void) setManualWatchList:(NSArray *)watchlist
 #pragma mark - private
 #pragma mark - C functions
 #pragma mark - NSTableView delegae methods

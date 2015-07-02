@@ -9,6 +9,7 @@
                 <outlet property="aryctrlWatchlist" destination="JzT-Gx-6BV" id="1uC-yF-ofx"/>
                 <outlet property="btnAddItem" destination="v9f-kw-W13" id="h3C-pJ-Kba"/>
                 <outlet property="btnDeleteItem" destination="GDM-Lm-p7k" id="IRK-ul-kdj"/>
+                <outlet property="tblviewManualWatchList" destination="XcX-zf-b6i" id="aob-KF-BeR"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
                 <outlet property="watchItem" destination="8er-XY-VDE" id="KFF-A6-fXP"/>
                 <outlet property="watchItemNote" destination="Mc3-S3-Mbg" id="YJr-ma-fSq"/>
@@ -136,7 +137,7 @@
                                         </textFieldCell>
                                         <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         <connections>
-                                            <binding destination="JzT-Gx-6BV" name="value" keyPath="arrangedObjects.Item" id="Vbv-ml-VZs"/>
+                                            <binding destination="JzT-Gx-6BV" name="value" keyPath="arrangedObjects.WatchItem" id="6pW-GQ-vlP"/>
                                         </connections>
                                     </tableColumn>
                                     <tableColumn width="388" minWidth="10" maxWidth="3.4028234663852886e+38" id="q26-9e-Ioq">
@@ -182,7 +183,7 @@
         <arrayController id="JzT-Gx-6BV" userLabel="Watch list">
             <declaredKeys>
                 <string>AutoOpen</string>
-                <string>Item</string>
+                <string>WatchItem</string>
                 <string>Note</string>
             </declaredKeys>
         </arrayController>
