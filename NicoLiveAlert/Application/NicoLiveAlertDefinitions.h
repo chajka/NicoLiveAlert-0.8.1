@@ -9,6 +9,8 @@
 #ifndef NicoLiveAlert_NicoLiveAlertDefinitions_h
 #define NicoLiveAlert_NicoLiveAlertDefinitions_h
 
+#define EmptyString									@""
+
 #define UsersDefaultResourceType					@"plist"
 #define UsersDefaultFileName						@"UsersDefaults"
 

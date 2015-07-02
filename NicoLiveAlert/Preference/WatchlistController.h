@@ -9,13 +9,16 @@
 #import <Cocoa/Cocoa.h>
 
 @interface WatchlistController : NSViewController {
-	IBOutlet NSArrayController			*watchlist;
+	IBOutlet NSArrayController			*aryctrlWatchlist;
+	IBOutlet NSTableView				*tblviewWatchlist;
 	
 	IBOutlet NSTextField				*watchItem;
 	IBOutlet NSTextField				*watchItemNote;
 
 	IBOutlet NSButton					*btnAddItem;
 	IBOutlet NSButton					*btnDeleteItem;
+
+	NSInteger							selectedRow;
 }
 
 @end

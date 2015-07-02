@@ -15,6 +15,10 @@
 #define WatchlistTitileName						NSLocalizedString(@"WatchlistTitleName", @"")
 #define WatchlistNibName						@"WatchlistController"
 
+#define WatchlistAutoOpenKey					@"AutoOpen"
+#define WatchlistItemKey						@"Item"
+#define WatchlistNoteKey						@"Note"
+
 #pragma mark - preference key
 #define PrefKeyNotifyOfficial					@"NotifyOfficial"
 #define PrefkeyNotifyChannel					@"NotifyChannel"
