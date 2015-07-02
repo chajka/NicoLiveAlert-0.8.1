@@ -38,6 +38,7 @@
 		C69B2CB81B44E8D7002233FB /* Password.png in Resources */ = {isa = PBXBuildFile; fileRef = C69B2CB71B44E8D7002233FB /* Password.png */; };
 		C69B2CBB1B451505002233FB /* UsersDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = C69B2CBA1B451505002233FB /* UsersDefaults.plist */; };
 		C69B2CBD1B45245F002233FB /* About.png in Resources */ = {isa = PBXBuildFile; fileRef = C69B2CBC1B45245F002233FB /* About.png */; };
+		C69B2CC21B45504B002233FB /* WatchItemsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C69B2CC11B45504B002233FB /* WatchItemsManager.m */; };
 		C6BDF92E1B3D3D580041F90F /* YCKeychainService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BDF92D1B3D3D580041F90F /* YCKeychainService.framework */; };
 		C6BDF92F1B3D3D670041F90F /* YCKeychainService.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C6BDF92D1B3D3D580041F90F /* YCKeychainService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -113,6 +114,8 @@
 		C69B2CBA1B451505002233FB /* UsersDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = UsersDefaults.plist; path = Preference/UsersDefaults.plist; sourceTree = "<group>"; };
 		C69B2CBC1B45245F002233FB /* About.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = About.png; path = Images/About.png; sourceTree = SOURCE_ROOT; };
 		C69B2CBE1B453314002233FB /* NicoLiveAlertDefinitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NicoLiveAlertDefinitions.h; path = Application/NicoLiveAlertDefinitions.h; sourceTree = "<group>"; };
+		C69B2CC01B45504B002233FB /* WatchItemsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WatchItemsManager.h; path = "Program Management/WatchItemsManager.h"; sourceTree = "<group>"; };
+		C69B2CC11B45504B002233FB /* WatchItemsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WatchItemsManager.m; path = "Program Management/WatchItemsManager.m"; sourceTree = "<group>"; };
 		C6BDF92D1B3D3D580041F90F /* YCKeychainService.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YCKeychainService.framework; path = External/YCKeychainService/YCKeychainService.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -267,6 +270,7 @@
 		C63A6E871B3ADF100022A385 /* NicoLiveAlert */ = {
 			isa = PBXGroup;
 			children = (
+				C69B2CBF1B454E83002233FB /* Program Management */,
 				C60B915D1B3AE31B0000E035 /* Network */,
 				C60B91521B3AE1A90000E035 /* Application */,
 				C60B91641B3AEDCC0000E035 /* Preferences */,
@@ -315,6 +319,15 @@
 				C69B2CAF1B44E777002233FB /* NicoLiveAlert.icns */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		C69B2CBF1B454E83002233FB /* Program Management */ = {
+			isa = PBXGroup;
+			children = (
+				C69B2CC01B45504B002233FB /* WatchItemsManager.h */,
+				C69B2CC11B45504B002233FB /* WatchItemsManager.m */,
+			);
+			name = "Program Management";
 			sourceTree = "<group>";
 		};
 		C6BDF92C1B3D3D3A0041F90F /* YCKeychainService */ = {
@@ -439,6 +452,7 @@
 			files = (
 				C630C7121B42CF5600128604 /* AccountController.m in Sources */,
 				C630C7171B42CFA600128604 /* CollaborationController.m in Sources */,
+				C69B2CC21B45504B002233FB /* WatchItemsManager.m in Sources */,
 				C60B91581B3AE1C90000E035 /* NicoLiveAlert.m in Sources */,
 				C630C70D1B42CA5200128604 /* WatchlistController.m in Sources */,
 				C630C71C1B42D15400128604 /* AboutController.m in Sources */,
