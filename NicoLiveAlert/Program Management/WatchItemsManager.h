@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface WatchItemsManager : NSObject
-
+@interface WatchItemsManager : NSObject {
+	NSMutableDictionary					*watchlist;
+	NSMutableArray						*manualWatchItems;
+}
+@property (readonly) NSMutableDictionary	*watchlist;
 @end

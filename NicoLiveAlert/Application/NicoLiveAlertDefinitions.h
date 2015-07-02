@@ -14,4 +14,7 @@
 #define UsersDefaultResourceType					@"plist"
 #define UsersDefaultFileName						@"UsersDefaults"
 
+
+#pragma mark - preference keys
+#define SavedManualWatchList						@"WatchListTable"
 #endif
