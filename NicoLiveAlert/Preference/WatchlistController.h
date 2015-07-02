@@ -8,6 +8,14 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface WatchlistController : NSViewController
+@interface WatchlistController : NSViewController {
+	IBOutlet NSArrayController			*watchlist;
+	
+	IBOutlet NSTextField				*watchItem;
+	IBOutlet NSTextField				*watchItemNote;
+
+	IBOutlet NSButton					*btnAddItem;
+	IBOutlet NSButton					*btnDeleteItem;
+}
 
 @end

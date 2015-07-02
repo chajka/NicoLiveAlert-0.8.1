@@ -7,6 +7,7 @@
 //
 
 #import "NicoLiveAlert.h"
+#import "NicoLiveAlertDefinitions.h"
 
 #import "WatchlistController.h"
 #import "AccountController.h"
@@ -23,6 +24,15 @@
 #pragma mark - class method
 #pragma mark - constructor / destructor
 #pragma mark - override
+- (void) awakeFromNib
+{
+	NSBundle *bundle = [NSBundle mainBundle];
+	NSString *defaultsPath = [bundle pathForResource:UsersDefaultFileName ofType:UsersDefaultResourceType];
+	NSDictionary *defaults = [NSDictionary dictionaryWithContentsOfFile:defaultsPath];
+	[[NSUserDefaults standardUserDefaults] registerDefaults:defaults];
+	
+}// end - (void) awakeFromNib
+
 - (void) applicationWillFinishLaunching:(NSNotification *)notification
 {
 	firstTimePreference = YES;

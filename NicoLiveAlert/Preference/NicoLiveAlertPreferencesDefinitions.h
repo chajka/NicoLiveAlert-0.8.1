@@ -15,6 +15,10 @@
 #define WatchlistTitileName						NSLocalizedString(@"WatchlistTitleName", @"")
 #define WatchlistNibName						@"WatchlistController"
 
+#pragma mark - preference key
+#define PrefKeyNotifyOfficial					@"NotifyOfficial"
+#define PrefkeyNotifyChannel					@"NotifyChannel"
+
 #pragma mark - Accounts Preference
 #define AccountsIdentifier						@"Account"
 #define AccountsIconName						@"Password"

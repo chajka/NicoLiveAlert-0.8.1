@@ -27,6 +27,10 @@
 	return self;
 }// end - (id) init
 #pragma mark - override
+- (void) controlTextDidChange:(NSNotification *)obj
+{
+	
+}
 #pragma mark -
 #pragma mark MASPreferencesViewController protocol methods
 

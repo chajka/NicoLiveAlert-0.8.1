@@ -36,7 +36,7 @@
 		C69B2CB51B44E78B002233FB /* sbicon.png in Resources */ = {isa = PBXBuildFile; fileRef = C69B2CB21B44E78B002233FB /* sbicon.png */; };
 		C69B2CB61B44E78B002233FB /* Applications.png in Resources */ = {isa = PBXBuildFile; fileRef = C69B2CB31B44E78B002233FB /* Applications.png */; };
 		C69B2CB81B44E8D7002233FB /* Password.png in Resources */ = {isa = PBXBuildFile; fileRef = C69B2CB71B44E8D7002233FB /* Password.png */; };
-		C69B2CBB1B451505002233FB /* UsersDefault.plist in Resources */ = {isa = PBXBuildFile; fileRef = C69B2CBA1B451505002233FB /* UsersDefault.plist */; };
+		C69B2CBB1B451505002233FB /* UsersDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = C69B2CBA1B451505002233FB /* UsersDefaults.plist */; };
 		C69B2CBD1B45245F002233FB /* About.png in Resources */ = {isa = PBXBuildFile; fileRef = C69B2CBC1B45245F002233FB /* About.png */; };
 		C6BDF92E1B3D3D580041F90F /* YCKeychainService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BDF92D1B3D3D580041F90F /* YCKeychainService.framework */; };
 		C6BDF92F1B3D3D670041F90F /* YCKeychainService.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C6BDF92D1B3D3D580041F90F /* YCKeychainService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -110,8 +110,9 @@
 		C69B2CB31B44E78B002233FB /* Applications.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Applications.png; path = Images/Applications.png; sourceTree = SOURCE_ROOT; };
 		C69B2CB71B44E8D7002233FB /* Password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Password.png; path = Images/Password.png; sourceTree = SOURCE_ROOT; };
 		C69B2CB91B451479002233FB /* NicoLiveAlertPreferencesDefinitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NicoLiveAlertPreferencesDefinitions.h; path = Preference/NicoLiveAlertPreferencesDefinitions.h; sourceTree = "<group>"; };
-		C69B2CBA1B451505002233FB /* UsersDefault.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = UsersDefault.plist; path = Preference/UsersDefault.plist; sourceTree = "<group>"; };
+		C69B2CBA1B451505002233FB /* UsersDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = UsersDefaults.plist; path = Preference/UsersDefaults.plist; sourceTree = "<group>"; };
 		C69B2CBC1B45245F002233FB /* About.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = About.png; path = Images/About.png; sourceTree = SOURCE_ROOT; };
+		C69B2CBE1B453314002233FB /* NicoLiveAlertDefinitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NicoLiveAlertDefinitions.h; path = Application/NicoLiveAlertDefinitions.h; sourceTree = "<group>"; };
 		C6BDF92D1B3D3D580041F90F /* YCKeychainService.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YCKeychainService.framework; path = External/YCKeychainService/YCKeychainService.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -141,6 +142,7 @@
 		C60B91521B3AE1A90000E035 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				C69B2CBE1B453314002233FB /* NicoLiveAlertDefinitions.h */,
 				C60B91571B3AE1C90000E035 /* NicoLiveAlert.h */,
 				C60B91561B3AE1C90000E035 /* NicoLiveAlert.m */,
 				C60B91531B3AE1B90000E035 /* NicoLiveAlert.xib */,
@@ -163,7 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				C69B2CB91B451479002233FB /* NicoLiveAlertPreferencesDefinitions.h */,
-				C69B2CBA1B451505002233FB /* UsersDefault.plist */,
+				C69B2CBA1B451505002233FB /* UsersDefaults.plist */,
 				C60B91651B3AEDDE0000E035 /* MASPreferences */,
 				C630C70A1B42CA5200128604 /* WatchlistController.h */,
 				C630C70B1B42CA5200128604 /* WatchlistController.m */,
@@ -405,7 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C63A6E901B3ADF100022A385 /* Images.xcassets in Resources */,
-				C69B2CBB1B451505002233FB /* UsersDefault.plist in Resources */,
+				C69B2CBB1B451505002233FB /* UsersDefaults.plist in Resources */,
 				C630C7261B42D24F00128604 /* AboutController.xib in Resources */,
 				C69B2CB81B44E8D7002233FB /* Password.png in Resources */,
 				C69B2CB61B44E78B002233FB /* Applications.png in Resources */,
