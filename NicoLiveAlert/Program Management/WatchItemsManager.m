@@ -10,6 +10,11 @@
 #import "NicoLiveAlertDefinitions.h"
 #import "NicoLiveAlertPreferencesDefinitions.h"
 
+@interface WatchItemsManager ()
+- (void) loadManualWatchlist;
+- (void) makeWatchList;
+@end
+
 @implementation WatchItemsManager
 #pragma mark - synthesize properties
 @synthesize watchlist;
@@ -25,6 +30,7 @@
 		manualWatchItems = [[NSMutableArray alloc] init];
 	
 		[self loadManualWatchlist];
+		[self makeWatchList];
 	}// end if self
 
 	return self;
@@ -34,6 +40,30 @@
 #pragma mark - properties
 #pragma mark - actions
 #pragma mark - messages
+- (void) addCommunities:(NSArray *)commus
+{
+	NSNumber *no = [NSNumber numberWithBool:NO];
+	for (NSString *community in commus) {
+		if ([watchlist valueForKey:community] == nil)
+			[watchlist setValue:no forKey:community];
+	}// end foreach communities
+}// end - (void) addCommunities:(NSArray *)commus
+
+- (BOOL) removeLive:(NSString *)liveID
+{
+	[watchlist setValue:nil forKey:liveID];
+
+	for (NSDictionary *item in [manualWatchItems reverseObjectEnumerator]) {
+		if ([[item valueForKey:WatchlistItemKey] isEqualToString:liveID]) {
+			[manualWatchItems removeObject:item];
+			[[NSUserDefaults standardUserDefaults] setObject:manualWatchItems forKey:SavedManualWatchList];
+			return YES;
+		}// end if found live
+	}// end foreach
+
+	return NO;
+}// end - (void) removeLive:(NSString *)liveID
+
 #pragma mark - private
 - (void) loadManualWatchlist
 {
@@ -41,6 +71,15 @@
 	NSArray *prefWatchlistItems = [ud arrayForKey:SavedManualWatchList];
 	manualWatchItems = [[NSMutableArray alloc] initWithArray:prefWatchlistItems];
 }// - (void) loadManualWatchlist
+
+- (void) makeWatchList
+{
+	for (NSDictionary *item in manualWatchItems) {
+		NSNumber *autoOpen = [item objectForKey:WatchlistAutoOpenKey];
+		NSString *watchItem = [item objectForKey:WatchlistItemKey];
+		[watchlist setValue:autoOpen forKey:watchItem];
+	}// end foreach manualWatchItems
+}// end - (void) makeWatchList
 #pragma mark - C functions
 
 @end
