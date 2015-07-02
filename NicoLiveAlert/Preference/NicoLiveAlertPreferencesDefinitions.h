@@ -25,5 +25,8 @@
 #define CollaborationTitileName					NSLocalizedString(@"CollaborationTitleName", @"")
 
 #pragma mark - About Preference
+#define AboutIdentifier							@"About"
+#define AboutIconName							@"About"
+#define AboutTitileName							NSLocalizedString(@"AboutTitleName", @"")
 
 #endif
