@@ -10,7 +10,6 @@
 
 @interface WatchlistController : NSViewController {
 	IBOutlet NSArrayController			*aryctrlWatchlist;
-	IBOutlet NSTableView				*tblviewWatchlist;
 	
 	IBOutlet NSTextField				*watchItem;
 	IBOutlet NSTextField				*watchItemNote;
