@@ -21,6 +21,7 @@
 		C60B917C1B3AF9D10000E035 /* CocoaOniguruma.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C60B91761B3AF8D70000E035 /* CocoaOniguruma.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C60B917D1B3AF9DB0000E035 /* Growl.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C60B91741B3AF8CB0000E035 /* Growl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C60B917E1B3AF9E30000E035 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C60B91721B3AF8C20000E035 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C623A9461B46A0CE00E63AD6 /* NLAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = C623A9451B46A0CE00E63AD6 /* NLAUser.m */; };
 		C630C70D1B42CA5200128604 /* WatchlistController.m in Sources */ = {isa = PBXBuildFile; fileRef = C630C70B1B42CA5200128604 /* WatchlistController.m */; };
 		C630C7121B42CF5600128604 /* AccountController.m in Sources */ = {isa = PBXBuildFile; fileRef = C630C7101B42CF5600128604 /* AccountController.m */; };
 		C630C7171B42CFA600128604 /* CollaborationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C630C7151B42CFA600128604 /* CollaborationController.m */; };
@@ -88,6 +89,8 @@
 		C60B91741B3AF8CB0000E035 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = External/Growl/Framework/Growl.framework; sourceTree = SOURCE_ROOT; };
 		C60B91761B3AF8D70000E035 /* CocoaOniguruma.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaOniguruma.framework; path = External/CocoaOniguruma/CocoaOniguruma.framework; sourceTree = SOURCE_ROOT; };
 		C60B91791B3AF9BE0000E035 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C623A9441B46A0CE00E63AD6 /* NLAUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NLAUser.h; path = UserManagement/NLAUser.h; sourceTree = "<group>"; };
+		C623A9451B46A0CE00E63AD6 /* NLAUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NLAUser.m; path = UserManagement/NLAUser.m; sourceTree = "<group>"; };
 		C630C70A1B42CA5200128604 /* WatchlistController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WatchlistController.h; path = Preference/WatchlistController.h; sourceTree = "<group>"; };
 		C630C70B1B42CA5200128604 /* WatchlistController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WatchlistController.m; path = Preference/WatchlistController.m; sourceTree = "<group>"; };
 		C630C70F1B42CF5600128604 /* AccountController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountController.h; path = Preference/AccountController.h; sourceTree = "<group>"; };
@@ -250,6 +253,15 @@
 			name = 2.0;
 			sourceTree = "<group>";
 		};
+		C623A9431B469E3300E63AD6 /* UserManagement */ = {
+			isa = PBXGroup;
+			children = (
+				C623A9441B46A0CE00E63AD6 /* NLAUser.h */,
+				C623A9451B46A0CE00E63AD6 /* NLAUser.m */,
+			);
+			name = UserManagement;
+			sourceTree = "<group>";
+		};
 		C63A6E7C1B3ADF100022A385 = {
 			isa = PBXGroup;
 			children = (
@@ -271,7 +283,7 @@
 		C63A6E871B3ADF100022A385 /* NicoLiveAlert */ = {
 			isa = PBXGroup;
 			children = (
-				C69B2CC31B455B30002233FB /* NicoLiveAlert.entitlements */,
+				C623A9431B469E3300E63AD6 /* UserManagement */,
 				C69B2CBF1B454E83002233FB /* Program Management */,
 				C60B915D1B3AE31B0000E035 /* Network */,
 				C60B91521B3AE1A90000E035 /* Application */,
@@ -280,6 +292,7 @@
 				C69B2CAE1B44E761002233FB /* Images */,
 				C63A6E881B3ADF100022A385 /* Supporting Files */,
 				C60B916C1B3AF6DE0000E035 /* Frameworks */,
+				C69B2CC31B455B30002233FB /* NicoLiveAlert.entitlements */,
 			);
 			path = NicoLiveAlert;
 			sourceTree = "<group>";
@@ -459,6 +472,7 @@
 			files = (
 				C630C7121B42CF5600128604 /* AccountController.m in Sources */,
 				C630C7171B42CFA600128604 /* CollaborationController.m in Sources */,
+				C623A9461B46A0CE00E63AD6 /* NLAUser.m in Sources */,
 				C69B2CC21B45504B002233FB /* WatchItemsManager.m in Sources */,
 				C60B91581B3AE1C90000E035 /* NicoLiveAlert.m in Sources */,
 				C630C70D1B42CA5200128604 /* WatchlistController.m in Sources */,
