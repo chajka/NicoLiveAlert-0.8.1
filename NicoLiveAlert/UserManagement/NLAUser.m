@@ -17,6 +17,12 @@
 
 @implementation NLAUser
 #pragma mark - synthesize properties
+@synthesize nickname;
+@synthesize joined;
+@synthesize ticket;
+@synthesize messageServerAddress;
+@synthesize messageServerPort;
+@synthesize messageServerThread;
 #pragma mark - class method
 #pragma mark - constructor / destructor
 - (id) initWithAccount:(NSString *)acct wathEnabled:(BOOL)enable
@@ -34,6 +40,8 @@
 #pragma mark - override
 #pragma mark - delegate
 #pragma mark - properties
+- (NSString *) account	{ return account.account; }
+- (NSString *) password	{ return account.password; }
 #pragma mark - actions
 #pragma mark - messages
 #pragma mark - private

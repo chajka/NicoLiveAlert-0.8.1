@@ -25,6 +25,14 @@
 	NSMutableString					*stringBuffer;
 	NSDictionary					*elementsDict;
 }
-- (id) initWithAccount:(NSString *)acct wathEnabled:(BOOL)enable;
+@property (readonly) NSString		*nickname;
+@property (readonly) NSMutableArray	*joined;
+@property (readonly) NSString		*ticket;
+@property (readonly) NSString		*messageServerAddress;
+@property (readonly) NSInteger		messageServerPort;
+@property (readonly) NSString		*messageServerThread;
 
+- (id) initWithAccount:(NSString *)acct wathEnabled:(BOOL)enable;
+- (NSString *) account;
+- (NSString *) password;
 @end
