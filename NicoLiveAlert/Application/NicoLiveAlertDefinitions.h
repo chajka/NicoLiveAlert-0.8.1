@@ -19,13 +19,15 @@
 #define UsersDefaultFileName						@"UsersDefaults"
 
 #pragma mark - getalertstatu elements
+#define ElementNameUserID							@"user_id"
 #define ElementNameUserName							@"user_name"
 #define ElementNameCommunityID						@"community_id"
 #define ElementNameMSAddress						@"addr"
 #define ElementNameMSPort							@"port"
 #define ElementNameMSThread							@"thread"
 enum {
-	idxElementUserName	= 1,
+	idxElementUserID = 1,
+	idxElementUserName,
 	idxElementCommunityID,
 	idxElementMSAddress,
 	idxElementMSPort,
@@ -34,4 +36,5 @@ enum {
 
 #pragma mark - preference keys
 #define SavedManualWatchList						@"WatchListTable"
+#define SavedWatchAccountList						@"AccountsList"
 #endif

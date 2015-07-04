@@ -15,4 +15,6 @@
 }
 @property (readonly) NSMutableArray		*users;
 @property (readwrite) WatchItemsManager	*watchItems;
+
+- (id) initWithAccountList:(NSArray *)list;
 @end

@@ -32,6 +32,8 @@
 	[[NSUserDefaults standardUserDefaults] registerDefaults:defaults];
 
 	watchItemsManager = [[WatchItemsManager alloc] init];
+	NSArray *currentWatchers = [[NSUserDefaults standardUserDefaults] arrayForKey:SavedWatchAccountList];
+	users = [[NLAUsers alloc] initWithAccountList:currentWatchers];
 }// end - (void) awakeFromNib
 
 - (void) applicationWillFinishLaunching:(NSNotification *)notification
@@ -69,7 +71,7 @@
 {
 	if (prefWindowController == nil) {
 		manualWatchListController = [[WatchlistController alloc] initWithWatchlist:watchItemsManager.manualWatchItems];
-		AccountController *account = [[AccountController alloc] init];
+		AccountController *account = [[AccountController alloc] initWithUsers:users];
 		CollaborationController *collabo = [[CollaborationController alloc] init];
 		AboutController *about = [[AboutController alloc] init];
 		NSArray *controllers = [NSArray arrayWithObjects:manualWatchListController, account, collabo, about, nil];

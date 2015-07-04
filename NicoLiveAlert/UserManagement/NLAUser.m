@@ -17,7 +17,9 @@
 
 @implementation NLAUser
 #pragma mark - synthesize properties
+@synthesize userID;
 @synthesize nickname;
+@synthesize watchEnabled;
 @synthesize joined;
 @synthesize ticket;
 @synthesize messageServerAddress;
@@ -75,6 +77,7 @@
 	 NSData *status = [connection dataByPost:&err];
 	joined = [[NSMutableArray alloc] init];
 	 elementsDict = [[NSDictionary alloc] initWithObjectsAndKeys:
+		[NSNumber numberWithInteger:idxElementUserID], ElementNameUserID,
 		[NSNumber numberWithInteger:idxElementUserName], ElementNameUserName,
 		[NSNumber numberWithInteger:idxElementCommunityID], ElementNameCommunityID,
 		[NSNumber numberWithInteger:idxElementMSAddress], ElementNameMSAddress,
@@ -99,6 +102,9 @@
 	NSUInteger index = [[elementsDict valueForKey:elementName] integerValue];
 	NSString *communityID = nil;
 	switch (index) {
+		case idxElementUserID:
+			userID = [[NSString alloc] initWithString:stringBuffer];
+			break;
 		case idxElementUserName:
 			nickname = [[NSString alloc] initWithString:stringBuffer];
 			break;

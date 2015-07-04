@@ -8,6 +8,8 @@
 
 #import "AccountController.h"
 #import "NicoLiveAlertPreferencesDefinitions.h"
+#import "NicoLiveAlertDefinitions.h"
+#import "NLAUser.h"
 
 @interface AccountController ()
 
@@ -16,17 +18,44 @@
 @implementation AccountController
 #pragma mark - synthesize properties
 #pragma mark - class method
-- (id) init
+- (id) initWithUsers:(NLAUsers *)users
 {
 	self = [super initWithNibName:AccountsNibName bundle:nil];
 	if (self) {
-		
-	}
+		watchedUsers = users;
+	}// end if self
 
 	return self;
 }// end - (id) init
 #pragma mark - constructor / destructor
 #pragma mark - override
+- (void) awakeFromNib
+{
+	[comboMaladdresses removeAllItems];
+
+	for (NLAUser *user in watchedUsers.users) {
+		NSMutableDictionary *entry = [NSMutableDictionary dictionary];
+		[entry setValue:[NSNumber numberWithBool:user.watchEnabled] forKey:@"WatchEnabled"];
+		[entry setValue:user.userID forKey:@"UserID"];
+		[entry setValue:user.nickname forKey:@"Nickname"];
+		[aryctrlAccounts addObject:entry];
+	}// end foreach
+}// end - (void) awakeFromNib
+
+- (void) controlTextDidEndEditing:(NSNotification *)obj
+{
+	NSString *mailaddress = [comboMaladdresses stringValue];
+	for (NLAUser *user in watchedUsers.users) {
+		if ([user.account isEqualToString:mailaddress])
+			[txtfldPassword setStringValue:user.password];
+	}// end foreach
+	
+	if (![mailaddress isEqualToString:@""])
+		[txtfldPassword setEnabled:YES];
+	else
+		[txtfldPassword setEnabled:NO];
+}// end - (void) controlTextDidEndEditing:(NSNotification *)obj
+
 #pragma mark -
 #pragma mark MASPreferencesViewController protocol methods
 

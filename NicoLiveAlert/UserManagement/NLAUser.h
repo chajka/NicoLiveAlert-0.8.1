@@ -12,6 +12,7 @@
 
 @interface NLAUser : NSObject <NSXMLParserDelegate> {
 	YCHTTPSKeychainItem				*account;
+	NSString						*userID;
 	NSString						*nickname;
 	BOOL							watchEnabled;
 	NSMutableArray					*joined;
@@ -25,7 +26,9 @@
 	NSMutableString					*stringBuffer;
 	NSDictionary					*elementsDict;
 }
+@property (readonly) NSString		*userID;
 @property (readonly) NSString		*nickname;
+@property (readonly) BOOL			watchEnabled;
 @property (readonly) NSMutableArray	*joined;
 @property (readonly) NSString		*ticket;
 @property (readonly) NSString		*messageServerAddress;

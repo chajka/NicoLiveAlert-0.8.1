@@ -11,6 +11,7 @@
 
 #import "WatchlistController.h"
 #import "WatchItemsManager.h"
+#import "NLAUsers.h"
 
 @interface NicoLiveAlert : NSObject <NSApplicationDelegate> {
 		// preference
@@ -19,6 +20,8 @@
 
 	WatchlistController				*manualWatchListController;
 	WatchItemsManager				*watchItemsManager;
+
+	NLAUsers						*users;
 }
 
 @end
