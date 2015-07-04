@@ -13,7 +13,7 @@
 @interface NLAUser : NSObject <NSXMLParserDelegate> {
 	YCHTTPSKeychainItem				*account;
 	NSString						*nickname;
-	BOOL							*watchEnabled;
+	BOOL							watchEnabled;
 	NSMutableArray					*joined;
 
 	NSString						*ticket;

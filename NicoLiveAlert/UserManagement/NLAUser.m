@@ -33,6 +33,7 @@
 		if (![self getTicket])
 			return nil;
 		[self getAlertStatus];
+		watchEnabled = enable;
 	}// end if self
 
 	return self;
