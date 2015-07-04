@@ -84,7 +84,19 @@
 
 - (IBAction) deleteWatchItem:(id)sender
 {
+	NSInteger row = [tblviewManualWatchList selectedRow];
+	NSDictionary *item = [[aryctrlWatchlist arrangedObjects] objectAtIndex:row];
 	[aryctrlWatchlist removeObjectAtArrangedObjectIndex:selectedRow];
+
+	NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+	NSMutableArray *watchItems = [NSMutableArray arrayWithArray:[ud arrayForKey:SavedManualWatchList]];
+	for (NSDictionary *watchitem in [watchItems reverseObjectEnumerator]) {
+		if ([[watchitem valueForKey:WatchlistItemKey] isEqualTo:[item valueForKey:WatchlistItemKey]]) {
+			[watchItems removeObject:watchitem];
+			[ud setObject:watchItems forKey:SavedManualWatchList];
+			break;
+		}// end if
+	}// end foreach
 
 	[btnDeleteItem setEnabled:NO];
 }// end - (IBAction) deleteWatchItem:(id)sender

@@ -19,6 +19,7 @@
 #pragma mark - synthesize properties
 @synthesize watchlist;
 @synthesize manualWatchItems;
+@synthesize manualWatchList;
 
 #pragma mark - class method
 #pragma mark - constructor / destructor
@@ -28,6 +29,7 @@
 	if (self) {
 		watchlist = [[NSMutableDictionary alloc] init];
 		manualWatchItems = [[NSMutableArray alloc] init];
+		manualWatchList = [[NSMutableDictionary alloc] init];
 	
 		[self loadManualWatchlist];
 		[self makeWatchList];
@@ -55,6 +57,7 @@
 
 	for (NSDictionary *item in [manualWatchItems reverseObjectEnumerator]) {
 		if ([[item valueForKey:WatchlistItemKey] isEqualToString:liveID]) {
+			[manualWatchList removeObjectForKey:liveID];
 			[manualWatchItems removeObject:item];
 			[[NSUserDefaults standardUserDefaults] setObject:manualWatchItems forKey:SavedManualWatchList];
 			return YES;
@@ -63,6 +66,12 @@
 
 	return NO;
 }// end - (void) removeLive:(NSString *)liveID
+
+- (void) resetWatchlist
+{
+	[watchlist removeAllObjects];
+	[watchlist addEntriesFromDictionary:manualWatchList];
+}// end - (void) resetWatchlist
 
 #pragma mark - private
 - (void) loadManualWatchlist
@@ -77,8 +86,9 @@
 	for (NSDictionary *item in manualWatchItems) {
 		NSNumber *autoOpen = [item objectForKey:WatchlistAutoOpenKey];
 		NSString *watchItem = [item objectForKey:WatchlistItemKey];
-		[watchlist setValue:autoOpen forKey:watchItem];
+		[manualWatchList setValue:autoOpen forKey:watchItem];
 	}// end foreach manualWatchItems
+	[watchlist addEntriesFromDictionary:manualWatchList];
 }// end - (void) makeWatchList
 #pragma mark - C functions
 
