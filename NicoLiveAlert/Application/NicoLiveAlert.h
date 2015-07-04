@@ -21,6 +21,5 @@
 	WatchItemsManager				*watchItemsManager;
 }
 
-
 @end
 

@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import <XCTest/XCTest.h>
+#import "NLAUser.h"
 
 @interface NLAUserTest : XCTestCase
 
@@ -26,8 +27,8 @@
 }
 
 - (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+	NLAUser *user = [[NLAUser alloc] initWithAccount:@"chajka.niconico@gmail.com" wathEnabled:YES];
+    XCTAssertNotNil(user, @"Test01 allocation fail\"%s\"", __PRETTY_FUNCTION__);
 }
 
 - (void)testPerformanceExample {
