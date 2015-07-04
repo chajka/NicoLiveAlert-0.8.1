@@ -11,10 +11,13 @@
 @interface WatchItemsManager : NSObject {
 	NSMutableDictionary					*watchlist;
 	NSMutableArray						*manualWatchItems;
+	NSMutableDictionary					*manualWatchList;
 }
 @property (readonly) NSMutableDictionary	*watchlist;
 @property (readonly) NSMutableArray			*manualWatchItems;
+@property (readonly) NSMutableDictionary	*manualWatchList;
 
 - (void) addCommunities:(NSArray *)communities;
 - (BOOL) removeLive:(NSString *)liveID;
+- (void) removeManualWatchItem:(NSDictionary *)item;
 @end

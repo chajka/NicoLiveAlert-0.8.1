@@ -18,15 +18,16 @@
 #pragma mark - synthesize properties
 #pragma mark - class method
 #pragma mark - constructor / destructor
-- (id) initWithWatchlist:(NSArray *)list
+- (id) initWithWatchlistManager:(WatchItemsManager *)manager
 {
 	self = [super initWithNibName:WatchlistNibName bundle:nil];
 	if (self) {
-		watchList = list;
+		watchItemManager = manager;
+		watchList = watchItemManager.manualWatchItems;
 	}// end if self
 
 	return self;
-}// end - (id) init
+}// end - (id) initWithWatchlistManager:(WatchItemsManager *)manager
 #pragma mark - override
 - (void) awakeFromNib
 {
@@ -84,7 +85,21 @@
 
 - (IBAction) deleteWatchItem:(id)sender
 {
+	NSInteger row = [tblviewManualWatchList selectedRow];
+	NSDictionary *item = [[aryctrlWatchlist arrangedObjects] objectAtIndex:row];
 	[aryctrlWatchlist removeObjectAtArrangedObjectIndex:selectedRow];
+
+	NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+	NSMutableArray *watchItems = [NSMutableArray arrayWithArray:[ud arrayForKey:SavedManualWatchList]];
+	for (NSDictionary *watchitem in [watchItems reverseObjectEnumerator]) {
+		if ([[watchitem valueForKey:WatchlistItemKey] isEqualTo:[item valueForKey:WatchlistItemKey]]) {
+			[watchItems removeObject:watchitem];
+			[ud setObject:watchItems forKey:SavedManualWatchList];
+			break;
+		}// end if
+	}// end foreach
+
+	[watchItemManager removeManualWatchItem:item];
 
 	[btnDeleteItem setEnabled:NO];
 }// end - (IBAction) deleteWatchItem:(id)sender
