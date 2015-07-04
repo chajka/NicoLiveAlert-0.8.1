@@ -4,3 +4,6 @@
 [submodule "NicoLiveAlert/Preference/MASPreferences"]
 	path = NicoLiveAlert/Preference/MASPreferences
 	url = git://github.com/shpakovski/MASPreferences.git
+[submodule "NicoLiveAlert/YCKeychainService"]
+	path = NicoLiveAlert/YCKeychainService
+	url = https://github.com/chajka/YCKeychainService
