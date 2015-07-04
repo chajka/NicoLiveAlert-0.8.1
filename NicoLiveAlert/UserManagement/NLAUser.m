@@ -27,6 +27,20 @@
 @synthesize messageServerThread;
 #pragma mark - class method
 #pragma mark - constructor / destructor
+- (id) initWithAccount:(NSString *)acct
+{
+	self = [super init];
+	if (self) {
+		account = [YCHTTPSKeychainItem userInKeychain:acct forURL:[NSURL URLWithString:NicoLoginFormFQDN]];
+		if (![self getTicket])
+			return nil;
+		[self getAlertStatus];
+		watchEnabled = YES;
+	}// end if self
+	
+	return self;
+}// end - (id) initWithAccount:(NSString *)acct
+
 - (id) initWithAccount:(NSString *)acct wathEnabled:(BOOL)enable
 {
 	self = [super init];
@@ -40,6 +54,7 @@
 
 	return self;
 }// end - (id) initWithAccount:(NSString *)acct wathEnabled:(BOOL)enable
+
 #pragma mark - override
 #pragma mark - delegate
 #pragma mark - properties

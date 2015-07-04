@@ -11,6 +11,8 @@
 #import "NicoLiveAlertDefinitions.h"
 #import "NLAUser.h"
 
+#import "YCHTTPSKeychainItem.h"
+
 @interface AccountController ()
 
 @end
@@ -38,7 +40,9 @@
 		[entry setValue:[NSNumber numberWithBool:user.watchEnabled] forKey:@"WatchEnabled"];
 		[entry setValue:user.userID forKey:@"UserID"];
 		[entry setValue:user.nickname forKey:@"Nickname"];
+		
 		[aryctrlAccounts addObject:entry];
+		[comboMaladdresses addItemWithObjectValue:user.account];
 	}// end foreach
 }// end - (void) awakeFromNib
 
@@ -49,11 +53,27 @@
 		if ([user.account isEqualToString:mailaddress])
 			[txtfldPassword setStringValue:user.password];
 	}// end foreach
+
+	if ([[txtfldPassword stringValue] isEqualToString:EmptyString]) {
+		YCHTTPSKeychainItem *user = [YCHTTPSKeychainItem userInKeychain:mailaddress forURL:[NSURL URLWithString:NicoLoginFormFQDN]];
+		if (user != nil)
+			[txtfldPassword setStringValue:user.password];
+	}// end if
 	
 	if (![mailaddress isEqualToString:@""])
 		[txtfldPassword setEnabled:YES];
 	else
 		[txtfldPassword setEnabled:NO];
+
+	if (![[txtfldPassword stringValue] isEqualToString:EmptyString])
+		[btnAddAccount setEnabled:YES];
+	else
+		[btnAddAccount setEnabled:NO];
+
+	if ((![[comboMaladdresses stringValue] isEqualToString:EmptyString]) && (![[txtfldPassword stringValue] isEqualToString:EmptyString]))
+		[btnDeleteAccount setEnabled:YES];
+	else
+		[btnDeleteAccount setEnabled:NO];
 }// end - (void) controlTextDidEndEditing:(NSNotification *)obj
 
 #pragma mark -

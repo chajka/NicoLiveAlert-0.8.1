@@ -35,6 +35,7 @@
 @property (readonly) NSInteger		messageServerPort;
 @property (readonly) NSString		*messageServerThread;
 
+- (id) initWithAccount:(NSString *)acct;
 - (id) initWithAccount:(NSString *)acct wathEnabled:(BOOL)enable;
 - (NSString *) account;
 - (NSString *) password;

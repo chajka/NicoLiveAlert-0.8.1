@@ -14,6 +14,9 @@
 	IBOutlet NSTextField			*txtfldPassword;
 	IBOutlet NSArrayController		*aryctrlAccounts;
 
+	IBOutlet NSButton				*btnAddAccount;
+	IBOutlet NSButton				*btnDeleteAccount;
+
 	NLAUsers						*watchedUsers;
 }
 - (id) initWithUsers:(NLAUsers *)users;
