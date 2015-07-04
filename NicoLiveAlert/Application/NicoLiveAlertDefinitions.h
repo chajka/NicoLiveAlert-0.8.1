@@ -15,6 +15,8 @@
 #define NicoLoginGetTicketURL						@"https://secure.nicovideo.jp/secure/login"
 #define NicoLiveGetAlertStatusURL					@"http://live.nicovideo.jp/api/getalertstatus"
 
+#define StartStreamRequestElement					@"<thread thread=\"%@\" version=\"20061206\" res_from=\"-1\"/>\0"
+
 #define UsersDefaultResourceType					@"plist"
 #define UsersDefaultFileName						@"UsersDefaults"
 
