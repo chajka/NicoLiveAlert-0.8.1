@@ -19,4 +19,5 @@
 
 - (void) addCommunities:(NSArray *)communities;
 - (BOOL) removeLive:(NSString *)liveID;
+- (void) removeManualWatchItem:(NSDictionary *)item;
 @end

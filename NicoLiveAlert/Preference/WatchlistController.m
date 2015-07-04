@@ -18,15 +18,16 @@
 #pragma mark - synthesize properties
 #pragma mark - class method
 #pragma mark - constructor / destructor
-- (id) initWithWatchlist:(NSArray *)list
+- (id) initWithWatchlistManager:(WatchItemsManager *)manager
 {
 	self = [super initWithNibName:WatchlistNibName bundle:nil];
 	if (self) {
-		watchList = list;
+		watchItemManager = manager;
+		watchList = watchItemManager.manualWatchItems;
 	}// end if self
 
 	return self;
-}// end - (id) init
+}// end - (id) initWithWatchlistManager:(WatchItemsManager *)manager
 #pragma mark - override
 - (void) awakeFromNib
 {
@@ -97,6 +98,8 @@
 			break;
 		}// end if
 	}// end foreach
+
+	[watchItemManager removeManualWatchItem:item];
 
 	[btnDeleteItem setEnabled:NO];
 }// end - (IBAction) deleteWatchItem:(id)sender

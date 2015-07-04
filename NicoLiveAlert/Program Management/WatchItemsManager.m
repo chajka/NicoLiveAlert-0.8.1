@@ -67,6 +67,17 @@
 	return NO;
 }// end - (void) removeLive:(NSString *)liveID
 
+- (void) removeManualWatchItem:(NSDictionary *)item
+{
+	for (NSDictionary *watchItem in [manualWatchItems reverseObjectEnumerator]) {
+		if ([[watchItem valueForKey:WatchlistItemKey] isEqualToString:[item valueForKey:WatchlistItemKey]]) {
+			[manualWatchItems removeObject:watchItem];
+			break;
+		}// end if mutch watch item
+	}// end foreach
+
+}// end - (void) removeManualWatchItem:(NSDictionary *)item
+
 - (void) resetWatchlist
 {
 	[watchlist removeAllObjects];

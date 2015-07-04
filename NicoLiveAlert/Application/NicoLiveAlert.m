@@ -70,7 +70,7 @@
 - (MASPreferencesWindowController *) preferencesWindowController
 {
 	if (prefWindowController == nil) {
-		manualWatchListController = [[WatchlistController alloc] initWithWatchlist:watchItemsManager.manualWatchItems];
+		manualWatchListController = [[WatchlistController alloc] initWithWatchlistManager:watchItemsManager];
 		AccountController *account = [[AccountController alloc] initWithUsers:users];
 		CollaborationController *collabo = [[CollaborationController alloc] init];
 		AboutController *about = [[AboutController alloc] init];
