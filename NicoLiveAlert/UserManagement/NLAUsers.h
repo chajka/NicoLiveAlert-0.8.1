@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WatchItemsManager.h"
 
-@interface NLAUsers : NSObject
-
+@interface NLAUsers : NSObject {
+	NSMutableArray						*users;
+	WatchItemsManager					*watchItems;
+}
+@property (readonly) NSMutableArray		*users;
+@property (readwrite) WatchItemsManager	*watchItems;
 @end
