@@ -21,4 +21,5 @@
 
 - (NLAUser *) addAccount:(NSString *)accnt;
 - (NLAUser *) addAccount:(NSString *)accnt password:(NSString *)passwd;
+- (BOOL) refreshUserInformation;
 @end

@@ -60,7 +60,7 @@
 			[txtfldPassword setStringValue:user.password];
 	}// end if
 	
-	if (![mailaddress isEqualToString:@""])
+	if (![mailaddress isEqualToString:EmptyString])
 		[txtfldPassword setEnabled:YES];
 	else
 		[txtfldPassword setEnabled:NO];
