@@ -32,6 +32,7 @@
 		C630C7291B42D24F00128604 /* WatchlistController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C630C7241B42D24F00128604 /* WatchlistController.xib */; };
 		C63A6E901B3ADF100022A385 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63A6E8F1B3ADF100022A385 /* Images.xcassets */; };
 		C63A6E9F1B3ADF100022A385 /* NicoLiveAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C63A6E9E1B3ADF100022A385 /* NicoLiveAlertTests.m */; };
+		C651F6CC1B480C7E00B1A097 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C651F6C91B480C7E00B1A097 /* Localizable.strings */; };
 		C69B2CB01B44E777002233FB /* NicoLiveAlert.icns in Resources */ = {isa = PBXBuildFile; fileRef = C69B2CAF1B44E777002233FB /* NicoLiveAlert.icns */; };
 		C69B2CB41B44E78B002233FB /* watch.png in Resources */ = {isa = PBXBuildFile; fileRef = C69B2CB11B44E78B002233FB /* watch.png */; };
 		C69B2CB51B44E78B002233FB /* sbicon.png in Resources */ = {isa = PBXBuildFile; fileRef = C69B2CB21B44E78B002233FB /* sbicon.png */; };
@@ -116,6 +117,8 @@
 		C63A6E981B3ADF100022A385 /* NicoLiveAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NicoLiveAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63A6E9D1B3ADF100022A385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C63A6E9E1B3ADF100022A385 /* NicoLiveAlertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NicoLiveAlertTests.m; sourceTree = "<group>"; };
+		C651F6CA1B480C7E00B1A097 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C651F6CB1B480C7E00B1A097 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = Localizable/ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C69B2CAF1B44E777002233FB /* NicoLiveAlert.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = NicoLiveAlert.icns; path = Images/NicoLiveAlert.icns; sourceTree = SOURCE_ROOT; };
 		C69B2CB11B44E78B002233FB /* watch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = watch.png; path = Images/watch.png; sourceTree = SOURCE_ROOT; };
 		C69B2CB21B44E78B002233FB /* sbicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sbicon.png; path = Images/sbicon.png; sourceTree = SOURCE_ROOT; };
@@ -331,6 +334,7 @@
 		C63A6E881B3ADF100022A385 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C651F6C91B480C7E00B1A097 /* Localizable.strings */,
 				C60B91591B3AE1E10000E035 /* Info.plist */,
 				C60B915A1B3AE1E10000E035 /* main.m */,
 			);
@@ -518,6 +522,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = C63A6E7C1B3ADF100022A385;
 			productRefGroup = C63A6E861B3ADF100022A385 /* Products */;
@@ -545,6 +550,7 @@
 				C630C7271B42D24F00128604 /* CollaborationController.xib in Resources */,
 				C60B91551B3AE1B90000E035 /* NicoLiveAlert.xib in Resources */,
 				C69B2CBD1B45245F002233FB /* About.png in Resources */,
+				C651F6CC1B480C7E00B1A097 /* Localizable.strings in Resources */,
 				C60B916B1B3AEDF70000E035 /* MASPreferencesWindow.xib in Resources */,
 				C630C7291B42D24F00128604 /* WatchlistController.xib in Resources */,
 				C69B2CB01B44E777002233FB /* NicoLiveAlert.icns in Resources */,
@@ -647,6 +653,15 @@
 				C630C7251B42D24F00128604 /* en */,
 			);
 			name = WatchlistController.xib;
+			sourceTree = "<group>";
+		};
+		C651F6C91B480C7E00B1A097 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C651F6CA1B480C7E00B1A097 /* en */,
+				C651F6CB1B480C7E00B1A097 /* ja */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
