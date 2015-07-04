@@ -7,6 +7,7 @@
 //
 
 #import "NLAUsers.h"
+#import "NicoLiveAlertDefinitions.h"
 
 @interface NLAUsers ()
 
@@ -24,8 +25,8 @@
 	if (self) {
 		users = [[NSMutableArray alloc] init];
 		for (NSDictionary *accnt in list) {
-			NSString *accountname = [accnt valueForKey:@"MailAddress"];
-			BOOL watchEnable = [[accnt valueForKey:@"WatchEnabled"] boolValue];
+			NSString *accountname = [accnt valueForKey:KeyMailAddress];
+			BOOL watchEnable = [[accnt valueForKey:KeyWatchEnabled] boolValue];
 			NLAUser *acc = [[NLAUser alloc] initWithAccount:accountname wathEnabled:watchEnable];
 			if (acc != nil)
 				[users addObject:acc];
