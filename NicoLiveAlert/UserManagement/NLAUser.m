@@ -75,6 +75,21 @@
 - (NSString *) password	{ return account.password; }
 #pragma mark - actions
 #pragma mark - messages
+- (BOOL) refreshUserInformation
+{
+	ticket = nil;
+	messageServerAddress = nil;
+	messageServerPort = 0;
+	messageServerThread = nil;
+	joined = [[NSMutableArray alloc] init];
+
+	if (![self getTicket])
+		return NO;
+
+	[self getAlertStatus];
+
+	return YES;
+}// end - (void) refreshUserInformation
 #pragma mark - private
 - (BOOL) getTicket
 {

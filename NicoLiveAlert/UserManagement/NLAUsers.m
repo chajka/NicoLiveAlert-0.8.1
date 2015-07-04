@@ -60,6 +60,16 @@
 
 	return user;
 }// end - (NLAUser *) addAccount:(NSString *)accnt password:(NSString *)passwd
+
+- (BOOL) refreshUserInformation
+{
+	BOOL success = YES;
+	for (NLAUser *user in users) {
+		success |= [user refreshUserInformation];
+	}// end foreach
+
+	return success;
+}//end - (BOOL) refreshUserInformation
 #pragma mark - private
 #pragma mark - C functions
 
