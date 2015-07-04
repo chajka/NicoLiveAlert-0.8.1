@@ -21,6 +21,7 @@
 		C60B917C1B3AF9D10000E035 /* CocoaOniguruma.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C60B91761B3AF8D70000E035 /* CocoaOniguruma.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C60B917D1B3AF9DB0000E035 /* Growl.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C60B91741B3AF8CB0000E035 /* Growl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C60B917E1B3AF9E30000E035 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C60B91721B3AF8C20000E035 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C623A9461B46A0CE00E63AD6 /* NLAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = C623A9451B46A0CE00E63AD6 /* NLAUser.m */; };
 		C630C70D1B42CA5200128604 /* WatchlistController.m in Sources */ = {isa = PBXBuildFile; fileRef = C630C70B1B42CA5200128604 /* WatchlistController.m */; };
 		C630C7121B42CF5600128604 /* AccountController.m in Sources */ = {isa = PBXBuildFile; fileRef = C630C7101B42CF5600128604 /* AccountController.m */; };
 		C630C7171B42CFA600128604 /* CollaborationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C630C7151B42CFA600128604 /* CollaborationController.m */; };
@@ -39,8 +40,17 @@
 		C69B2CBB1B451505002233FB /* UsersDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = C69B2CBA1B451505002233FB /* UsersDefaults.plist */; };
 		C69B2CBD1B45245F002233FB /* About.png in Resources */ = {isa = PBXBuildFile; fileRef = C69B2CBC1B45245F002233FB /* About.png */; };
 		C69B2CC21B45504B002233FB /* WatchItemsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C69B2CC11B45504B002233FB /* WatchItemsManager.m */; };
-		C6BDF92E1B3D3D580041F90F /* YCKeychainService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6BDF92D1B3D3D580041F90F /* YCKeychainService.framework */; };
-		C6BDF92F1B3D3D670041F90F /* YCKeychainService.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C6BDF92D1B3D3D580041F90F /* YCKeychainService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C6D77E021B474A6F0019FBDB /* NLAUserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D77E011B474A6F0019FBDB /* NLAUserTest.m */; };
+		C6E54B381B47565B00DA6854 /* YCKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E54B351B47565B00DA6854 /* YCKeychainItem.m */; };
+		C6E54B391B47565B00DA6854 /* YCKeychainItem+private.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E54B371B47565B00DA6854 /* YCKeychainItem+private.m */; };
+		C6E54B3F1B47568600DA6854 /* YCHTTPSKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E54B3C1B47568600DA6854 /* YCHTTPSKeychainItem.m */; };
+		C6E54B401B47568600DA6854 /* YCInternetKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E54B3E1B47568600DA6854 /* YCInternetKeychainItem.m */; };
+		C6E54B441B4756A400DA6854 /* YCGenericKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E54B431B4756A400DA6854 /* YCGenericKeychainItem.m */; };
+		C6E54B4A1B4756C700DA6854 /* YCKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E54B471B4756C700DA6854 /* YCKeychain.m */; };
+		C6E54B4B1B4756C700DA6854 /* YCKeychainACL.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E54B491B4756C700DA6854 /* YCKeychainACL.m */; };
+		C6E54B4F1B47572500DA6854 /* CommonUtilties.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E54B4D1B47572500DA6854 /* CommonUtilties.m */; };
+		C6E54B521B477BD200DA6854 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E54B501B477BBB00DA6854 /* Security.framework */; };
+		C6E54B551B47856B00DA6854 /* NLAUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E54B541B47856B00DA6854 /* NLAUsers.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +70,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C6BDF92F1B3D3D670041F90F /* YCKeychainService.framework in Copy Frameworks */,
 				C60B917C1B3AF9D10000E035 /* CocoaOniguruma.framework in Copy Frameworks */,
 				C60B917D1B3AF9DB0000E035 /* Growl.framework in Copy Frameworks */,
 				C60B917E1B3AF9E30000E035 /* Sparkle.framework in Copy Frameworks */,
@@ -88,6 +97,8 @@
 		C60B91741B3AF8CB0000E035 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Growl.framework; path = External/Growl/Framework/Growl.framework; sourceTree = SOURCE_ROOT; };
 		C60B91761B3AF8D70000E035 /* CocoaOniguruma.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaOniguruma.framework; path = External/CocoaOniguruma/CocoaOniguruma.framework; sourceTree = SOURCE_ROOT; };
 		C60B91791B3AF9BE0000E035 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C623A9441B46A0CE00E63AD6 /* NLAUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NLAUser.h; path = UserManagement/NLAUser.h; sourceTree = "<group>"; };
+		C623A9451B46A0CE00E63AD6 /* NLAUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NLAUser.m; path = UserManagement/NLAUser.m; sourceTree = "<group>"; };
 		C630C70A1B42CA5200128604 /* WatchlistController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WatchlistController.h; path = Preference/WatchlistController.h; sourceTree = "<group>"; };
 		C630C70B1B42CA5200128604 /* WatchlistController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WatchlistController.m; path = Preference/WatchlistController.m; sourceTree = "<group>"; };
 		C630C70F1B42CF5600128604 /* AccountController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountController.h; path = Preference/AccountController.h; sourceTree = "<group>"; };
@@ -117,7 +128,27 @@
 		C69B2CC01B45504B002233FB /* WatchItemsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WatchItemsManager.h; path = "Program Management/WatchItemsManager.h"; sourceTree = "<group>"; };
 		C69B2CC11B45504B002233FB /* WatchItemsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WatchItemsManager.m; path = "Program Management/WatchItemsManager.m"; sourceTree = "<group>"; };
 		C69B2CC31B455B30002233FB /* NicoLiveAlert.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NicoLiveAlert.entitlements; sourceTree = "<group>"; };
-		C6BDF92D1B3D3D580041F90F /* YCKeychainService.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YCKeychainService.framework; path = External/YCKeychainService/YCKeychainService.framework; sourceTree = SOURCE_ROOT; };
+		C6D77E011B474A6F0019FBDB /* NLAUserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLAUserTest.m; sourceTree = "<group>"; };
+		C6E54B2D1B4755EF00DA6854 /* YCKeychainService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YCKeychainService.h; path = YCKeychainService/YCKeychainService/YCKeychainService.h; sourceTree = "<group>"; };
+		C6E54B341B47565B00DA6854 /* YCKeychainItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YCKeychainItem.h; path = YCKeychainService/YCKeychainService/KeychainItem/YCKeychainItem.h; sourceTree = "<group>"; };
+		C6E54B351B47565B00DA6854 /* YCKeychainItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YCKeychainItem.m; path = YCKeychainService/YCKeychainService/KeychainItem/YCKeychainItem.m; sourceTree = "<group>"; };
+		C6E54B361B47565B00DA6854 /* YCKeychainItem+private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "YCKeychainItem+private.h"; path = "YCKeychainService/YCKeychainService/KeychainItem/YCKeychainItem+private.h"; sourceTree = "<group>"; };
+		C6E54B371B47565B00DA6854 /* YCKeychainItem+private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "YCKeychainItem+private.m"; path = "YCKeychainService/YCKeychainService/KeychainItem/YCKeychainItem+private.m"; sourceTree = "<group>"; };
+		C6E54B3B1B47568600DA6854 /* YCHTTPSKeychainItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YCHTTPSKeychainItem.h; path = YCKeychainService/YCKeychainService/InternetKeychainItem/YCHTTPSKeychainItem.h; sourceTree = "<group>"; };
+		C6E54B3C1B47568600DA6854 /* YCHTTPSKeychainItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YCHTTPSKeychainItem.m; path = YCKeychainService/YCKeychainService/InternetKeychainItem/YCHTTPSKeychainItem.m; sourceTree = "<group>"; };
+		C6E54B3D1B47568600DA6854 /* YCInternetKeychainItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YCInternetKeychainItem.h; path = YCKeychainService/YCKeychainService/InternetKeychainItem/YCInternetKeychainItem.h; sourceTree = "<group>"; };
+		C6E54B3E1B47568600DA6854 /* YCInternetKeychainItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YCInternetKeychainItem.m; path = YCKeychainService/YCKeychainService/InternetKeychainItem/YCInternetKeychainItem.m; sourceTree = "<group>"; };
+		C6E54B421B4756A400DA6854 /* YCGenericKeychainItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YCGenericKeychainItem.h; path = YCKeychainService/YCKeychainService/GenericKeychainItem/YCGenericKeychainItem.h; sourceTree = "<group>"; };
+		C6E54B431B4756A400DA6854 /* YCGenericKeychainItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YCGenericKeychainItem.m; path = YCKeychainService/YCKeychainService/GenericKeychainItem/YCGenericKeychainItem.m; sourceTree = "<group>"; };
+		C6E54B461B4756C700DA6854 /* YCKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YCKeychain.h; path = YCKeychainService/YCKeychainService/KeychainStorage/YCKeychain.h; sourceTree = "<group>"; };
+		C6E54B471B4756C700DA6854 /* YCKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YCKeychain.m; path = YCKeychainService/YCKeychainService/KeychainStorage/YCKeychain.m; sourceTree = "<group>"; };
+		C6E54B481B4756C700DA6854 /* YCKeychainACL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YCKeychainACL.h; path = YCKeychainService/YCKeychainService/KeychainStorage/YCKeychainACL.h; sourceTree = "<group>"; };
+		C6E54B491B4756C700DA6854 /* YCKeychainACL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YCKeychainACL.m; path = YCKeychainService/YCKeychainService/KeychainStorage/YCKeychainACL.m; sourceTree = "<group>"; };
+		C6E54B4D1B47572500DA6854 /* CommonUtilties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommonUtilties.m; path = "YCKeychainService/YCKeychainService/Supporting Functions/CommonUtilties.m"; sourceTree = "<group>"; };
+		C6E54B4E1B47572500DA6854 /* CommonUtilties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonUtilties.h; path = "YCKeychainService/YCKeychainService/Supporting Functions/CommonUtilties.h"; sourceTree = "<group>"; };
+		C6E54B501B477BBB00DA6854 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C6E54B531B47856B00DA6854 /* NLAUsers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NLAUsers.h; path = UserManagement/NLAUsers.h; sourceTree = "<group>"; };
+		C6E54B541B47856B00DA6854 /* NLAUsers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NLAUsers.m; path = UserManagement/NLAUsers.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +157,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C60B917B1B3AF9C80000E035 /* QuartzCore.framework in Frameworks */,
+				C6E54B521B477BD200DA6854 /* Security.framework in Frameworks */,
 				C60B91771B3AF8D70000E035 /* CocoaOniguruma.framework in Frameworks */,
-				C6BDF92E1B3D3D580041F90F /* YCKeychainService.framework in Frameworks */,
 				C60B91751B3AF8CB0000E035 /* Growl.framework in Frameworks */,
 				C60B91731B3AF8C20000E035 /* Sparkle.framework in Frameworks */,
 			);
@@ -202,7 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				C60B91791B3AF9BE0000E035 /* QuartzCore.framework */,
-				C6BDF92C1B3D3D3A0041F90F /* YCKeychainService */,
+				C6E54B501B477BBB00DA6854 /* Security.framework */,
 				C60B916F1B3AF7240000E035 /* CocoaOniguruma */,
 				C60B916E1B3AF7170000E035 /* Growl */,
 				C60B916D1B3AF7000000E035 /* Sparkle */,
@@ -250,6 +281,17 @@
 			name = 2.0;
 			sourceTree = "<group>";
 		};
+		C623A9431B469E3300E63AD6 /* UserManagement */ = {
+			isa = PBXGroup;
+			children = (
+				C623A9441B46A0CE00E63AD6 /* NLAUser.h */,
+				C623A9451B46A0CE00E63AD6 /* NLAUser.m */,
+				C6E54B531B47856B00DA6854 /* NLAUsers.h */,
+				C6E54B541B47856B00DA6854 /* NLAUsers.m */,
+			);
+			name = UserManagement;
+			sourceTree = "<group>";
+		};
 		C63A6E7C1B3ADF100022A385 = {
 			isa = PBXGroup;
 			children = (
@@ -271,15 +313,17 @@
 		C63A6E871B3ADF100022A385 /* NicoLiveAlert */ = {
 			isa = PBXGroup;
 			children = (
-				C69B2CC31B455B30002233FB /* NicoLiveAlert.entitlements */,
+				C623A9431B469E3300E63AD6 /* UserManagement */,
 				C69B2CBF1B454E83002233FB /* Program Management */,
-				C60B915D1B3AE31B0000E035 /* Network */,
 				C60B91521B3AE1A90000E035 /* Application */,
 				C60B91641B3AEDCC0000E035 /* Preferences */,
+				C60B915D1B3AE31B0000E035 /* Network */,
+				C6E54B271B4755BF00DA6854 /* YCKeychaiService */,
 				C63A6E8F1B3ADF100022A385 /* Images.xcassets */,
 				C69B2CAE1B44E761002233FB /* Images */,
 				C63A6E881B3ADF100022A385 /* Supporting Files */,
 				C60B916C1B3AF6DE0000E035 /* Frameworks */,
+				C69B2CC31B455B30002233FB /* NicoLiveAlert.entitlements */,
 			);
 			path = NicoLiveAlert;
 			sourceTree = "<group>";
@@ -296,6 +340,7 @@
 		C63A6E9B1B3ADF100022A385 /* NicoLiveAlertTests */ = {
 			isa = PBXGroup;
 			children = (
+				C6D77E001B474A4A0019FBDB /* UserManagement */,
 				C63A6E9E1B3ADF100022A385 /* NicoLiveAlertTests.m */,
 				C63A6E9C1B3ADF100022A385 /* Supporting Files */,
 			);
@@ -332,12 +377,76 @@
 			name = "Program Management";
 			sourceTree = "<group>";
 		};
-		C6BDF92C1B3D3D3A0041F90F /* YCKeychainService */ = {
+		C6D77E001B474A4A0019FBDB /* UserManagement */ = {
 			isa = PBXGroup;
 			children = (
-				C6BDF92D1B3D3D580041F90F /* YCKeychainService.framework */,
+				C6D77E011B474A6F0019FBDB /* NLAUserTest.m */,
 			);
-			name = YCKeychainService;
+			name = UserManagement;
+			sourceTree = "<group>";
+		};
+		C6E54B271B4755BF00DA6854 /* YCKeychaiService */ = {
+			isa = PBXGroup;
+			children = (
+				C6E54B2D1B4755EF00DA6854 /* YCKeychainService.h */,
+				C6E54B451B4756BC00DA6854 /* KeychainStorage */,
+				C6E54B331B47564800DA6854 /* KeychainItem */,
+				C6E54B3A1B47567600DA6854 /* InternetKeychainItem */,
+				C6E54B411B47569600DA6854 /* GenericKeychainItem */,
+				C6E54B4C1B47570500DA6854 /* Supporting Functions */,
+			);
+			name = YCKeychaiService;
+			sourceTree = "<group>";
+		};
+		C6E54B331B47564800DA6854 /* KeychainItem */ = {
+			isa = PBXGroup;
+			children = (
+				C6E54B341B47565B00DA6854 /* YCKeychainItem.h */,
+				C6E54B351B47565B00DA6854 /* YCKeychainItem.m */,
+				C6E54B361B47565B00DA6854 /* YCKeychainItem+private.h */,
+				C6E54B371B47565B00DA6854 /* YCKeychainItem+private.m */,
+			);
+			name = KeychainItem;
+			sourceTree = "<group>";
+		};
+		C6E54B3A1B47567600DA6854 /* InternetKeychainItem */ = {
+			isa = PBXGroup;
+			children = (
+				C6E54B3B1B47568600DA6854 /* YCHTTPSKeychainItem.h */,
+				C6E54B3C1B47568600DA6854 /* YCHTTPSKeychainItem.m */,
+				C6E54B3D1B47568600DA6854 /* YCInternetKeychainItem.h */,
+				C6E54B3E1B47568600DA6854 /* YCInternetKeychainItem.m */,
+			);
+			name = InternetKeychainItem;
+			sourceTree = "<group>";
+		};
+		C6E54B411B47569600DA6854 /* GenericKeychainItem */ = {
+			isa = PBXGroup;
+			children = (
+				C6E54B421B4756A400DA6854 /* YCGenericKeychainItem.h */,
+				C6E54B431B4756A400DA6854 /* YCGenericKeychainItem.m */,
+			);
+			name = GenericKeychainItem;
+			sourceTree = "<group>";
+		};
+		C6E54B451B4756BC00DA6854 /* KeychainStorage */ = {
+			isa = PBXGroup;
+			children = (
+				C6E54B461B4756C700DA6854 /* YCKeychain.h */,
+				C6E54B471B4756C700DA6854 /* YCKeychain.m */,
+				C6E54B481B4756C700DA6854 /* YCKeychainACL.h */,
+				C6E54B491B4756C700DA6854 /* YCKeychainACL.m */,
+			);
+			name = KeychainStorage;
+			sourceTree = "<group>";
+		};
+		C6E54B4C1B47570500DA6854 /* Supporting Functions */ = {
+			isa = PBXGroup;
+			children = (
+				C6E54B4D1B47572500DA6854 /* CommonUtilties.m */,
+				C6E54B4E1B47572500DA6854 /* CommonUtilties.h */,
+			);
+			name = "Supporting Functions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -459,11 +568,21 @@
 			files = (
 				C630C7121B42CF5600128604 /* AccountController.m in Sources */,
 				C630C7171B42CFA600128604 /* CollaborationController.m in Sources */,
+				C623A9461B46A0CE00E63AD6 /* NLAUser.m in Sources */,
 				C69B2CC21B45504B002233FB /* WatchItemsManager.m in Sources */,
+				C6E54B4B1B4756C700DA6854 /* YCKeychainACL.m in Sources */,
+				C6E54B3F1B47568600DA6854 /* YCHTTPSKeychainItem.m in Sources */,
+				C6E54B551B47856B00DA6854 /* NLAUsers.m in Sources */,
 				C60B91581B3AE1C90000E035 /* NicoLiveAlert.m in Sources */,
+				C6E54B441B4756A400DA6854 /* YCGenericKeychainItem.m in Sources */,
+				C6E54B4F1B47572500DA6854 /* CommonUtilties.m in Sources */,
 				C630C70D1B42CA5200128604 /* WatchlistController.m in Sources */,
+				C6E54B381B47565B00DA6854 /* YCKeychainItem.m in Sources */,
 				C630C71C1B42D15400128604 /* AboutController.m in Sources */,
+				C6E54B4A1B4756C700DA6854 /* YCKeychain.m in Sources */,
+				C6E54B391B47565B00DA6854 /* YCKeychainItem+private.m in Sources */,
 				C60B91621B3AE32E0000E035 /* YCStreamSessionGCD.m in Sources */,
+				C6E54B401B47568600DA6854 /* YCInternetKeychainItem.m in Sources */,
 				C60B915C1B3AE1E10000E035 /* main.m in Sources */,
 				C60B916A1B3AEDF70000E035 /* MASPreferencesWindowController.m in Sources */,
 				C60B91631B3AE32E0000E035 /* HTTPConnection.m in Sources */,
@@ -474,6 +593,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6D77E021B474A6F0019FBDB /* NLAUserTest.m in Sources */,
 				C63A6E9F1B3ADF100022A385 /* NicoLiveAlertTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -626,6 +746,7 @@
 				);
 				INFOPLIST_FILE = "NicoLiveAlert/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -645,6 +766,7 @@
 				);
 				INFOPLIST_FILE = "NicoLiveAlert/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

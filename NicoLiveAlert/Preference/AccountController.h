@@ -7,7 +7,17 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "NLAUsers.h"
 
-@interface AccountController : NSViewController
+@interface AccountController : NSViewController {
+	IBOutlet NSComboBox				*comboMaladdresses;
+	IBOutlet NSTextField			*txtfldPassword;
+	IBOutlet NSArrayController		*aryctrlAccounts;
 
+	IBOutlet NSButton				*btnAddAccount;
+	IBOutlet NSButton				*btnDeleteAccount;
+
+	NLAUsers						*watchedUsers;
+}
+- (id) initWithUsers:(NLAUsers *)users;
 @end
