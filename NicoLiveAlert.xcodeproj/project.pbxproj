@@ -50,6 +50,7 @@
 		C6E54B4B1B4756C700DA6854 /* YCKeychainACL.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E54B491B4756C700DA6854 /* YCKeychainACL.m */; };
 		C6E54B4F1B47572500DA6854 /* CommonUtilties.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E54B4D1B47572500DA6854 /* CommonUtilties.m */; };
 		C6E54B521B477BD200DA6854 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E54B501B477BBB00DA6854 /* Security.framework */; };
+		C6E54B551B47856B00DA6854 /* NLAUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E54B541B47856B00DA6854 /* NLAUsers.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +147,8 @@
 		C6E54B4D1B47572500DA6854 /* CommonUtilties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommonUtilties.m; path = "YCKeychainService/YCKeychainService/Supporting Functions/CommonUtilties.m"; sourceTree = "<group>"; };
 		C6E54B4E1B47572500DA6854 /* CommonUtilties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonUtilties.h; path = "YCKeychainService/YCKeychainService/Supporting Functions/CommonUtilties.h"; sourceTree = "<group>"; };
 		C6E54B501B477BBB00DA6854 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C6E54B531B47856B00DA6854 /* NLAUsers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NLAUsers.h; path = UserManagement/NLAUsers.h; sourceTree = "<group>"; };
+		C6E54B541B47856B00DA6854 /* NLAUsers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NLAUsers.m; path = UserManagement/NLAUsers.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +286,8 @@
 			children = (
 				C623A9441B46A0CE00E63AD6 /* NLAUser.h */,
 				C623A9451B46A0CE00E63AD6 /* NLAUser.m */,
+				C6E54B531B47856B00DA6854 /* NLAUsers.h */,
+				C6E54B541B47856B00DA6854 /* NLAUsers.m */,
 			);
 			name = UserManagement;
 			sourceTree = "<group>";
@@ -567,6 +572,7 @@
 				C69B2CC21B45504B002233FB /* WatchItemsManager.m in Sources */,
 				C6E54B4B1B4756C700DA6854 /* YCKeychainACL.m in Sources */,
 				C6E54B3F1B47568600DA6854 /* YCHTTPSKeychainItem.m in Sources */,
+				C6E54B551B47856B00DA6854 /* NLAUsers.m in Sources */,
 				C60B91581B3AE1C90000E035 /* NicoLiveAlert.m in Sources */,
 				C6E54B441B4756A400DA6854 /* YCGenericKeychainItem.m in Sources */,
 				C6E54B4F1B47572500DA6854 /* CommonUtilties.m in Sources */,
