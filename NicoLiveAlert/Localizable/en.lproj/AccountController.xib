@@ -54,6 +54,9 @@
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" size="12" name="STHeitiSC-Light"/>
                     </buttonCell>
+                    <connections>
+                        <action selector="addAccount:" target="-2" id="K8q-9e-3UC"/>
+                    </connections>
                 </button>
                 <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IM6-Xa-VY6">
                     <rect key="frame" x="20" y="20" width="600" height="218"/>
@@ -62,7 +65,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="xDv-ba-CtP" id="Kg8-wV-y1Z">
-                                <rect key="frame" x="0.0" y="0.0" width="598" height="19"/>
+                                <rect key="frame" x="0.0" y="0.0" width="597" height="19"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <size key="intercellSpacing" width="3" height="2"/>
                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -99,7 +102,7 @@
                                             <binding destination="nav-Ef-Dv4" name="value" keyPath="arrangedObjects.UserID" id="4Lx-Q5-nTx"/>
                                         </connections>
                                     </tableColumn>
-                                    <tableColumn width="394" minWidth="10" maxWidth="3.4028234663852886e+38" id="ZqK-zJ-aE1">
+                                    <tableColumn width="395" minWidth="10" maxWidth="3.4028234663852886e+38" id="ZqK-zJ-aE1">
                                         <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="ニックネーム">
                                             <font key="font" metaFont="smallSystem"/>
                                             <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>

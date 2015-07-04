@@ -37,9 +37,9 @@
 
 	for (NLAUser *user in watchedUsers.users) {
 		NSMutableDictionary *entry = [NSMutableDictionary dictionary];
-		[entry setValue:[NSNumber numberWithBool:user.watchEnabled] forKey:@"WatchEnabled"];
-		[entry setValue:user.userID forKey:@"UserID"];
-		[entry setValue:user.nickname forKey:@"Nickname"];
+		[entry setValue:[NSNumber numberWithBool:user.watchEnabled] forKey:KeyWatchEnabled];
+		[entry setValue:user.userID forKey:KeyUserID];
+		[entry setValue:user.nickname forKey:KeyNickname];
 		
 		[aryctrlAccounts addObject:entry];
 		[comboMaladdresses addItemWithObjectValue:user.account];
@@ -97,6 +97,29 @@
 #pragma mark - delegate
 #pragma mark - properties
 #pragma mark - actions
+- (IBAction) addAccount:(id)sender
+{
+	NSString *account = [comboMaladdresses stringValue];
+	NSString *password = [txtfldPassword stringValue];
+	NLAUser *user = [watchedUsers addAccount:account];
+	if (user == nil)
+		[watchedUsers addAccount:account password:password];
+
+	if (user == nil)
+		return;
+
+	NSMutableDictionary *entry = [NSMutableDictionary dictionary];
+	[entry setValue:[NSNumber numberWithBool:user.watchEnabled] forKey:KeyWatchEnabled];
+	[entry setValue:user.userID forKey:KeyUserID];
+	[entry setValue:user.nickname forKey:KeyNickname];
+	[aryctrlAccounts addObject:entry];
+
+	NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+	[entry setValue:user.account forKey:KeyMailAddress];
+	NSMutableArray *accounts = [NSMutableArray arrayWithArray:[ud arrayForKey:SavedWatchAccountList]];
+	[accounts addObject:entry];
+	[ud setValue:accounts forKey:SavedWatchAccountList];
+}// end - (IBAction) addAccount:(id)sender
 #pragma mark - messages
 #pragma mark - private
 #pragma mark - C functions

@@ -37,6 +37,7 @@
 
 - (id) initWithAccount:(NSString *)acct;
 - (id) initWithAccount:(NSString *)acct wathEnabled:(BOOL)enable;
+- (id) initWithAccount:(NSString *)acct password:(NSString *)passwd;
 - (NSString *) account;
 - (NSString *) password;
 @end

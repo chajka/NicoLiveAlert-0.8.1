@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "WatchItemsManager.h"
+#import "NLAUser.h"
 
 @interface NLAUsers : NSObject {
 	NSMutableArray						*users;
@@ -17,4 +18,7 @@
 @property (readwrite) WatchItemsManager	*watchItems;
 
 - (id) initWithAccountList:(NSArray *)list;
+
+- (NLAUser *) addAccount:(NSString *)accnt;
+- (NLAUser *) addAccount:(NSString *)accnt password:(NSString *)passwd;
 @end

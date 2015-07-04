@@ -7,7 +7,6 @@
 //
 
 #import "NLAUsers.h"
-#import "NLAUser.h"
 
 @interface NLAUsers ()
 
@@ -40,6 +39,27 @@
 #pragma mark - properties
 #pragma mark - actions
 #pragma mark - messages
+- (NLAUser *) addAccount:(NSString *)accnt
+{
+	NLAUser *user = [[NLAUser alloc] initWithAccount:accnt];
+	if (user == nil)
+		return nil;
+	
+	[users addObject:accnt];
+	
+	return user;
+}// - (NLAUser *) addAccount:(NSString *)accnt
+
+- (NLAUser *) addAccount:(NSString *)accnt password:(NSString *)passwd
+{
+	NLAUser *user = [[NLAUser alloc] initWithAccount:accnt password:passwd];
+	if (user == nil)
+		return nil;
+
+	[users addObject:accnt];
+
+	return user;
+}// end - (NLAUser *) addAccount:(NSString *)accnt password:(NSString *)passwd
 #pragma mark - private
 #pragma mark - C functions
 

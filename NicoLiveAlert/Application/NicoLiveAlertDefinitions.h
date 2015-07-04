@@ -18,6 +18,11 @@
 #define UsersDefaultResourceType					@"plist"
 #define UsersDefaultFileName						@"UsersDefaults"
 
+#define KeyWatchEnabled								@"WatchEnabled"
+#define KeyUserID									@"UserID"
+#define KeyNickname									@"Nickname"
+#define KeyMailAddress								@"MailAddress"
+
 #pragma mark - getalertstatu elements
 #define ElementNameUserID							@"user_id"
 #define ElementNameUserName							@"user_name"

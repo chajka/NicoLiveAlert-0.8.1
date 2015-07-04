@@ -55,6 +55,19 @@
 	return self;
 }// end - (id) initWithAccount:(NSString *)acct wathEnabled:(BOOL)enable
 
+- (id) initWithAccount:(NSString *)acct password:(NSString *)passwd
+{
+	self = [super init];
+	if (self) {
+		account = [[YCHTTPSKeychainItem alloc] initWithAccount:acct andPassword:passwd forURL:[NSURL URLWithString:NicoLoginFormFQDN]];
+		if (![self getTicket])
+			return nil;
+		[self getAlertStatus];
+		watchEnabled = YES;
+	}// end if self
+
+	return self;
+}// end - (id) initWithAccount:(NSString *)acct password:(NSString *)passwd
 #pragma mark - override
 #pragma mark - delegate
 #pragma mark - properties
