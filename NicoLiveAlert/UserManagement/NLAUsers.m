@@ -38,6 +38,23 @@
 #pragma mark - override
 #pragma mark - delegate
 #pragma mark - properties
+- (NSString *) messageServerAddress
+{
+	NLAUser *user = [users objectAtIndex:0];
+	return user.messageServerAddress;
+}// end - (NSString *) messageServerAddress
+
+- (NSInteger) messageServerPort
+{
+	NLAUser *user = [users objectAtIndex:0];
+	return user.messageServerPort;
+}// end - (NSInteger) messageServerPort
+
+- (NSString *) messageServerThread
+{
+	NLAUser *user = [users objectAtIndex:0];
+	return user.messageServerThread;
+}// end - (NSString *) messageServerThread
 #pragma mark - actions
 #pragma mark - messages
 - (NLAUser *) addAccount:(NSString *)accnt

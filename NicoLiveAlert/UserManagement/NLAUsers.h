@@ -16,6 +16,10 @@
 }
 @property (readonly) NSMutableArray		*users;
 @property (readwrite) WatchItemsManager	*watchItems;
+@property (readonly) NSString			*messageServerAddress;
+@property (readonly) NSInteger			messageServerPort;
+@property (readonly) NSString			*ticket;
+@property (readonly) NSString			*messageServerThread;
 
 - (id) initWithAccountList:(NSArray *)list;
 
