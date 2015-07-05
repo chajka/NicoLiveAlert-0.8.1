@@ -10,6 +10,7 @@
 #define NicoLiveAlert_NicoLiveAlertDefinitions_h
 
 #define EmptyString									@""
+#define StatusbarIconName							@"sbicon"
 
 #define NicoLoginFormFQDN							@"https://secure.nicovideo.jp/secure/login_form"
 #define NicoLoginGetTicketURL						@"https://secure.nicovideo.jp/secure/login"
@@ -40,6 +41,31 @@ enum {
 	idxElementMSPort,
 	idxElementMSThread
 };
+#pragma mark -
+#pragma mark definitions for NLStatusbar
+
+#define DeactiveConnection	@"Disconnected"
+#define ActiveNoprogString	@"Monitoring"
+#define userProgramOnly		@"%ld User program"
+#define officialProgramOnly	@"%ld Official program"
+#define TwoOrMoreSuffix		@"s"
+#define StringConcatinater	@", "
+
+enum statusBarMenuItems {
+	tagAutoOpen = 1001,
+	tagPorgrams,
+	tagOfficial,
+	tagSep1 = 1010,
+	tagAccounts,
+	tagResetConnection,
+	tagRescanRSS,
+	tagLaunchApplications,
+	tagSep2 = 1020,
+	tagPreference,
+	tagCheckUpdate,
+	tagQuit
+};
+
 
 #pragma mark - preference keys
 #define SavedManualWatchList						@"WatchListTable"

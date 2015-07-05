@@ -12,8 +12,11 @@
 #import "WatchlistController.h"
 #import "WatchItemsManager.h"
 #import "NLAUsers.h"
+#import "NLStatusbar.h"
 
 @interface NicoLiveAlert : NSObject <NSApplicationDelegate> {
+		//
+	IBOutlet NSMenu					*menuStatusbarMenu;
 		// preference
 	BOOL							firstTimePreference;
 	MASPreferencesWindowController	*prefWindowController;
@@ -22,6 +25,7 @@
 	WatchItemsManager				*watchItemsManager;
 
 	NLAUsers						*users;
+	NLStatusbar						*statusbar;
 }
 
 @end

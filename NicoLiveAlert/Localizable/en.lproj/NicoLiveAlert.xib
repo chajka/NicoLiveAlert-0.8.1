@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
     </dependencies>
     <objects>
@@ -13,6 +14,7 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" userLabel="NicoLiveAlert" customClass="NicoLiveAlert">
             <connections>
+                <outlet property="menuStatusbarMenu" destination="I6g-Kp-1En" id="t1o-fk-oDX"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -680,5 +682,52 @@
                 <autoresizingMask key="autoresizingMask"/>
             </view>
         </window>
+        <menu id="I6g-Kp-1En" userLabel="Statusbar Menu">
+            <items>
+                <menuItem title="AutoOpen Checked Live" tag="1001" alternate="YES" id="kRf-vL-La5">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Programs" onStateImage="NLOnState" tag="1002" id="VQW-Eh-uNU">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="OfficialPrograms" onStateImage="NLOnState" tag="1003" id="U1M-0E-qvj">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" tag="1010" id="sSz-Pe-eb3"/>
+                <menuItem title="Accounts" state="mixed" onStateImage="NLOnState" offStateImage="NLOffState" mixedStateImage="NLMixedState" tag="1011" id="oNZ-rq-91d">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="ResetConnection" tag="1012" id="TZ7-Is-V1c">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Scan RSS" tag="1013" id="jYP-Gs-Lgk">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Launch Applications" tag="1014" id="Cc9-2L-YmA">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" tag="1020" id="yOc-LK-2Cs"/>
+                <menuItem title="Preferences…" tag="1021" id="jH0-yh-diQ">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="openPreference:" target="Voe-Tx-rLC" id="m0L-c6-bC5"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Check for updates" tag="1022" id="ahs-oI-nOP">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Quit" tag="1023" id="uGE-qs-DKg">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="terminate:" target="-1" id="YXu-Sb-2KQ"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
     </objects>
+    <resources>
+        <image name="NLMixedState" width="12" height="12"/>
+        <image name="NLOffState" width="12" height="12"/>
+        <image name="NLOnState" width="12" height="12"/>
+    </resources>
 </document>

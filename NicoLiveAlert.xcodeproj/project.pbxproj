@@ -33,6 +33,9 @@
 		C63A6E901B3ADF100022A385 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63A6E8F1B3ADF100022A385 /* Images.xcassets */; };
 		C63A6E9F1B3ADF100022A385 /* NicoLiveAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C63A6E9E1B3ADF100022A385 /* NicoLiveAlertTests.m */; };
 		C651F6CC1B480C7E00B1A097 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C651F6C91B480C7E00B1A097 /* Localizable.strings */; };
+		C65200BF1B4904CF00FA27E7 /* NLOnState.png in Resources */ = {isa = PBXBuildFile; fileRef = C65200BC1B4904CF00FA27E7 /* NLOnState.png */; };
+		C65200C01B4904CF00FA27E7 /* NLOffState.png in Resources */ = {isa = PBXBuildFile; fileRef = C65200BD1B4904CF00FA27E7 /* NLOffState.png */; };
+		C65200C11B4904CF00FA27E7 /* NLMixedState.png in Resources */ = {isa = PBXBuildFile; fileRef = C65200BE1B4904CF00FA27E7 /* NLMixedState.png */; };
 		C69B2CB01B44E777002233FB /* NicoLiveAlert.icns in Resources */ = {isa = PBXBuildFile; fileRef = C69B2CAF1B44E777002233FB /* NicoLiveAlert.icns */; };
 		C69B2CB41B44E78B002233FB /* watch.png in Resources */ = {isa = PBXBuildFile; fileRef = C69B2CB11B44E78B002233FB /* watch.png */; };
 		C69B2CB51B44E78B002233FB /* sbicon.png in Resources */ = {isa = PBXBuildFile; fileRef = C69B2CB21B44E78B002233FB /* sbicon.png */; };
@@ -41,6 +44,7 @@
 		C69B2CBB1B451505002233FB /* UsersDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = C69B2CBA1B451505002233FB /* UsersDefaults.plist */; };
 		C69B2CBD1B45245F002233FB /* About.png in Resources */ = {isa = PBXBuildFile; fileRef = C69B2CBC1B45245F002233FB /* About.png */; };
 		C69B2CC21B45504B002233FB /* WatchItemsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C69B2CC11B45504B002233FB /* WatchItemsManager.m */; };
+		C6B5D9AD1B48F6D800FCFB07 /* NLStatusbar.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B5D9AC1B48F6D800FCFB07 /* NLStatusbar.m */; };
 		C6D77E021B474A6F0019FBDB /* NLAUserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D77E011B474A6F0019FBDB /* NLAUserTest.m */; };
 		C6E54B381B47565B00DA6854 /* YCKeychainItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E54B351B47565B00DA6854 /* YCKeychainItem.m */; };
 		C6E54B391B47565B00DA6854 /* YCKeychainItem+private.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E54B371B47565B00DA6854 /* YCKeychainItem+private.m */; };
@@ -119,6 +123,9 @@
 		C63A6E9E1B3ADF100022A385 /* NicoLiveAlertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NicoLiveAlertTests.m; sourceTree = "<group>"; };
 		C651F6CA1B480C7E00B1A097 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C651F6CB1B480C7E00B1A097 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = Localizable/ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C65200BC1B4904CF00FA27E7 /* NLOnState.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NLOnState.png; path = Images/NLOnState.png; sourceTree = SOURCE_ROOT; };
+		C65200BD1B4904CF00FA27E7 /* NLOffState.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NLOffState.png; path = Images/NLOffState.png; sourceTree = SOURCE_ROOT; };
+		C65200BE1B4904CF00FA27E7 /* NLMixedState.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NLMixedState.png; path = Images/NLMixedState.png; sourceTree = SOURCE_ROOT; };
 		C69B2CAF1B44E777002233FB /* NicoLiveAlert.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = NicoLiveAlert.icns; path = Images/NicoLiveAlert.icns; sourceTree = SOURCE_ROOT; };
 		C69B2CB11B44E78B002233FB /* watch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = watch.png; path = Images/watch.png; sourceTree = SOURCE_ROOT; };
 		C69B2CB21B44E78B002233FB /* sbicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sbicon.png; path = Images/sbicon.png; sourceTree = SOURCE_ROOT; };
@@ -131,6 +138,8 @@
 		C69B2CC01B45504B002233FB /* WatchItemsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WatchItemsManager.h; path = "Program Management/WatchItemsManager.h"; sourceTree = "<group>"; };
 		C69B2CC11B45504B002233FB /* WatchItemsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WatchItemsManager.m; path = "Program Management/WatchItemsManager.m"; sourceTree = "<group>"; };
 		C69B2CC31B455B30002233FB /* NicoLiveAlert.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NicoLiveAlert.entitlements; sourceTree = "<group>"; };
+		C6B5D9AB1B48F6D800FCFB07 /* NLStatusbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NLStatusbar.h; path = "User Interface/NLStatusbar.h"; sourceTree = "<group>"; };
+		C6B5D9AC1B48F6D800FCFB07 /* NLStatusbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NLStatusbar.m; path = "User Interface/NLStatusbar.m"; sourceTree = "<group>"; };
 		C6D77E011B474A6F0019FBDB /* NLAUserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLAUserTest.m; sourceTree = "<group>"; };
 		C6E54B2D1B4755EF00DA6854 /* YCKeychainService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YCKeychainService.h; path = YCKeychainService/YCKeychainService/YCKeychainService.h; sourceTree = "<group>"; };
 		C6E54B341B47565B00DA6854 /* YCKeychainItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YCKeychainItem.h; path = YCKeychainService/YCKeychainService/KeychainItem/YCKeychainItem.h; sourceTree = "<group>"; };
@@ -316,6 +325,7 @@
 		C63A6E871B3ADF100022A385 /* NicoLiveAlert */ = {
 			isa = PBXGroup;
 			children = (
+				C6B5D9A71B48F34200FCFB07 /* User Interface */,
 				C623A9431B469E3300E63AD6 /* UserManagement */,
 				C69B2CBF1B454E83002233FB /* Program Management */,
 				C60B91521B3AE1A90000E035 /* Application */,
@@ -368,6 +378,9 @@
 				C69B2CBC1B45245F002233FB /* About.png */,
 				C69B2CB21B44E78B002233FB /* sbicon.png */,
 				C69B2CAF1B44E777002233FB /* NicoLiveAlert.icns */,
+				C65200BC1B4904CF00FA27E7 /* NLOnState.png */,
+				C65200BD1B4904CF00FA27E7 /* NLOffState.png */,
+				C65200BE1B4904CF00FA27E7 /* NLMixedState.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -379,6 +392,15 @@
 				C69B2CC11B45504B002233FB /* WatchItemsManager.m */,
 			);
 			name = "Program Management";
+			sourceTree = "<group>";
+		};
+		C6B5D9A71B48F34200FCFB07 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				C6B5D9AB1B48F6D800FCFB07 /* NLStatusbar.h */,
+				C6B5D9AC1B48F6D800FCFB07 /* NLStatusbar.m */,
+			);
+			name = "User Interface";
 			sourceTree = "<group>";
 		};
 		C6D77E001B474A4A0019FBDB /* UserManagement */ = {
@@ -542,12 +564,15 @@
 			files = (
 				C63A6E901B3ADF100022A385 /* Images.xcassets in Resources */,
 				C69B2CBB1B451505002233FB /* UsersDefaults.plist in Resources */,
+				C65200C01B4904CF00FA27E7 /* NLOffState.png in Resources */,
 				C630C7261B42D24F00128604 /* AboutController.xib in Resources */,
 				C69B2CB81B44E8D7002233FB /* Password.png in Resources */,
 				C69B2CB61B44E78B002233FB /* Applications.png in Resources */,
 				C69B2CB41B44E78B002233FB /* watch.png in Resources */,
+				C65200C11B4904CF00FA27E7 /* NLMixedState.png in Resources */,
 				C69B2CB51B44E78B002233FB /* sbicon.png in Resources */,
 				C630C7271B42D24F00128604 /* CollaborationController.xib in Resources */,
+				C65200BF1B4904CF00FA27E7 /* NLOnState.png in Resources */,
 				C60B91551B3AE1B90000E035 /* NicoLiveAlert.xib in Resources */,
 				C69B2CBD1B45245F002233FB /* About.png in Resources */,
 				C651F6CC1B480C7E00B1A097 /* Localizable.strings in Resources */,
@@ -588,6 +613,7 @@
 				C6E54B4A1B4756C700DA6854 /* YCKeychain.m in Sources */,
 				C6E54B391B47565B00DA6854 /* YCKeychainItem+private.m in Sources */,
 				C60B91621B3AE32E0000E035 /* YCStreamSessionGCD.m in Sources */,
+				C6B5D9AD1B48F6D800FCFB07 /* NLStatusbar.m in Sources */,
 				C6E54B401B47568600DA6854 /* YCInternetKeychainItem.m in Sources */,
 				C60B915C1B3AE1E10000E035 /* main.m in Sources */,
 				C60B916A1B3AEDF70000E035 /* MASPreferencesWindowController.m in Sources */,
