@@ -26,6 +26,7 @@
 #pragma mark - override
 - (void) awakeFromNib
 {
+	firstTimePreference = YES;
 	NSBundle *bundle = [NSBundle mainBundle];
 	NSString *defaultsPath = [bundle pathForResource:UsersDefaultFileName ofType:UsersDefaultResourceType];
 	NSDictionary *defaults = [NSDictionary dictionaryWithContentsOfFile:defaultsPath];
@@ -38,7 +39,6 @@
 
 - (void) applicationWillFinishLaunching:(NSNotification *)notification
 {
-	firstTimePreference = YES;
 }// end - (void) applicationWillFinishLaunching:(NSNotification *)notification
 
 - (void) applicationDidFinishLaunching:(NSNotification *)aNotification
