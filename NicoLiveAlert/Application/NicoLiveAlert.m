@@ -39,6 +39,7 @@
 
 - (void) applicationWillFinishLaunching:(NSNotification *)notification
 {
+	statusbar = [[NLStatusbar alloc] initWithMenu:menuStatusbarMenu andImageName:StatusbarIconName];
 }// end - (void) applicationWillFinishLaunching:(NSNotification *)notification
 
 - (void) applicationDidFinishLaunching:(NSNotification *)aNotification

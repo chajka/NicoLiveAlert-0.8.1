@@ -10,6 +10,7 @@
 #define NicoLiveAlert_NicoLiveAlertDefinitions_h
 
 #define EmptyString									@""
+#define StatusbarIconName							@"sbicon"
 
 #define NicoLoginFormFQDN							@"https://secure.nicovideo.jp/secure/login_form"
 #define NicoLoginGetTicketURL						@"https://secure.nicovideo.jp/secure/login"
