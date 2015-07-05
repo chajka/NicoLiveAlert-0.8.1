@@ -38,6 +38,10 @@
 	NSInteger					officialProgramCount;
 	
 }
+@property (readwrite)	NSCellStateValue	userState;
+@property (readonly)	NSInteger			numberOfPrograms;
+@property (readwrite)	BOOL				connected;
+@property (readwrite)	BOOL				watchOfficial;
 
 - (id) initWithMenu:(NSMenu *)menu andImageName:(NSString *)name;
 @end

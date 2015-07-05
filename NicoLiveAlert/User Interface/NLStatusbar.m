@@ -44,6 +44,7 @@ static CGFloat disconnectedColorAlpha = 0.70;
 
 @implementation NLStatusbar
 #pragma mark - synthesize properties
+@synthesize numberOfPrograms;
 #pragma mark - class method
 #pragma mark - constructor / destructor
 - (id) initWithMenu:(NSMenu *)menu andImageName:(NSString *)name
@@ -66,9 +67,103 @@ static CGFloat disconnectedColorAlpha = 0.70;
 #pragma mark - override
 #pragma mark - delegate
 #pragma mark - properties
+- (BOOL) connected
+{
+	return connected;
+}// - (BOOL) connected
+
+- (void) setConnected:(BOOL)connected_
+{
+	connected = connected_;
+	[self makeStatusbarIcon];
+}// - (void) setConnected:(BOOL)connected_
+
+- (void) toggleConnected
+{
+	connected = !connected;
+	[self makeStatusbarIcon];
+}// end - (void) toggleConnected
+
+- (NSCellStateValue) userState
+{
+	return userState;
+}// end - (NSInteger) userState
+
+- (void) setUserState:(NSCellStateValue)state
+{
+	userState = state;
+	[self makeStatusbarIcon];
+}// end - (void) setUserState:(NSInteger)state
+
+- (BOOL) watchOfficial
+{
+	return watchOfficial;
+}// end - (BOOL) watchOfficial
+
+- (void) setWatchOfficial:(BOOL)watch
+{
+	watchOfficial = watch;
+	[[statusbarMenu itemWithTag:tagOfficial] setHidden:!watchOfficial];
+}
+
 #pragma mark - actions
 #pragma mark - messages
+- (void) connectionRised:(NSNotification *)aNotification
+{
+	if (connected == YES)
+		return;
+	// end if recieve rise but already conected
+	
+	connected = YES;
+	[self makeStatusbarIcon];
+}// end - (void) connectionRised
+
+- (void) connectionDown:(NSNotification *)aNotification
+{
+	connected = NO;
+	[self makeStatusbarIcon];
+}// end - (void) connectionDown
+
 #pragma mark - private
+- (void) updateToolTip
+{
+	NSMutableString *tooltip = nil;
+	NSMutableArray *array = [NSMutableArray array];
+	if (connected == NO)
+	{
+		[statusBarItem setToolTip:DeactiveConnection];
+		return;
+	}// end if disconnected
+	
+	if ((userProgramCount == 0) && (officialProgramCount == 0))
+	{
+		[statusBarItem setToolTip:ActiveNoprogString];
+		return;
+	}// end if program not found
+	
+	if (userProgramCount > 0)
+	{
+		tooltip = [NSMutableString stringWithFormat:userProgramOnly, userProgramCount];
+		if (userProgramCount > 1)
+			[tooltip appendString:TwoOrMoreSuffix];
+		// end if program count is two or more
+		[array addObject:tooltip];
+		tooltip = nil;
+	}// end if user program found
+	
+	if (officialProgramCount > 0)
+	{
+		tooltip = [NSMutableString stringWithFormat:officialProgramOnly, officialProgramCount];
+		if (officialProgramCount > 1)
+			[tooltip appendString:TwoOrMoreSuffix];
+		// end if program count is two or more
+		[array addObject:tooltip];
+		tooltip = nil;
+	}// end if user program found
+	
+	[statusBarItem setToolTip:[array componentsJoinedByString:StringConcatinater]];
+}// end - (void) updateToolTip
+
 - (void) setupMembers:(NSString *)imageName
 {
 #if __has_feature(objc_arc)
@@ -133,11 +228,7 @@ static CGFloat disconnectedColorAlpha = 0.70;
 
 - (void) makeStatusbarIcon
 {
-#if __has_feature(objc_arc)
 	@autoreleasepool {
-#else
-		NSAutoreleasePool *arp = [[NSAutoreleasePool alloc] init];
-#endif
 		CIImage *invertImage = nil;
 		CIImage *destImage = nil;
 		[statusbarIcon setSize:iconSize];
@@ -223,18 +314,9 @@ static CGFloat disconnectedColorAlpha = 0.70;
 		[statusBarItem setAlternateImage:statusbarAlt];
 		
 		// update tooltip
-//		[self updateToolTip];
+		[self updateToolTip];
 		
-#if __has_feature(objc_arc)
 	}
-#else
-	[statusbarIcon release];
-	[statusbarAlt release];
-	[arp drain];
-#endif
-#if __has_feature(objc_arc) == 0
-	//	[destImage release];
-#endif
 }// end - (CIImage *) makeStatusbarIcon
 
 #pragma mark - C functions
